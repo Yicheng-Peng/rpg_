@@ -1,9 +1,72 @@
-[gd_scene format=3 uid="uid://c1f6wukkfastg"]
+[gd_scene load_steps=4 format=3 uid="uid://c1f6wukkfastg"]
 
-[node name="Dialogue" type="Control"]
+[ext_resource type="Texture2D" uid="uid://xljtxxoxtdlv" path="res://art/privious/icon.svg" id="1_cpw6a"]
+[ext_resource type="Script" uid="uid://5w2jo1j25jv3" path="res://script/dialogue_control.gd" id="1_esu7l"]
+[ext_resource type="Resource" uid="uid://br50krtrunsws" path="res://Dialogues/dialogue_1.tres" id="2_2qw3d"]
+
+[node name="Dialogue" type="Control" node_paths=PackedStringArray("character_name_text", "text_box", "left_avatar", "right_avatar")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_esu7l")
+character_name_text = NodePath("HBoxContainer/Panel/MarginContainer/VBoxContainer/name")
+text_box = NodePath("HBoxContainer/Panel/MarginContainer/VBoxContainer/content")
+left_avatar = NodePath("HBoxContainer/Avatar_on_left")
+right_avatar = NodePath("HBoxContainer/Avatar_on_right")
+main_dialogue = ExtResource("2_2qw3d")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -221.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Avatar_on_left" type="TextureRect" parent="HBoxContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+texture = ExtResource("1_cpw6a")
+stretch_mode = 5
+
+[node name="Panel" type="Panel" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/Panel/MarginContainer"]
+layout_mode = 2
+
+[node name="name" type="Label" parent="HBoxContainer/Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+
+[node name="content" type="Label" parent="HBoxContainer/Panel/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+autowrap_mode = 3
+
+[node name="Avatar_on_right" type="TextureRect" parent="HBoxContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+texture = ExtResource("1_cpw6a")
+stretch_mode = 5
+
+[connection signal="gui_input" from="HBoxContainer/Panel/MarginContainer/VBoxContainer" to="." method="_click"]
