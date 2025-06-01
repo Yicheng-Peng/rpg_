@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://c3o1mdiel3ajn"]
+
+[ext_resource type="Script" uid="uid://b7ipbpex3e8sp" path="res://script/item.gd" id="1_44xkb"]
+[ext_resource type="Texture2D" uid="uid://djngwgbw24uhu" path="res://art/items/Legendary_helmet.png" id="2_cs7yn"]
+
+[resource]
+script = ExtResource("1_44xkb")
+name = "Legendary_Dragon_Slayer_Helmet"
+number = 1
+type = 0
+describe = ""
+texture = ExtResource("2_cs7yn")
+countble = true
+attack = 0
+defense = 40
+health = 0
+speed = 0
+buy_price = 40
+sell_price = 20
+metadata/_custom_type_script = "uid://b7ipbpex3e8sp"

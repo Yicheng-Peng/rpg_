@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://ce8q05d38jj7i"]
+
+[ext_resource type="Script" uid="uid://b7ipbpex3e8sp" path="res://script/item.gd" id="1_3rbwm"]
+[ext_resource type="Texture2D" uid="uid://cetv28shi26ei" path="res://art/items/wooden_sword.png" id="2_3rbwm"]
+
+[resource]
+script = ExtResource("1_3rbwm")
+name = "wood_sword"
+number = 1
+type = 0
+describe = "A beginner's wooden sword, plain and simple"
+texture = ExtResource("2_3rbwm")
+countble = true
+attack = 10
+defense = 0
+health = 0
+speed = 0
+buy_price = 10
+sell_price = 5
+metadata/_custom_type_script = "uid://b7ipbpex3e8sp"

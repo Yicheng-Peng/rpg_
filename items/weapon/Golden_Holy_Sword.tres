@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://b06m0o5outbbp"]
+
+[ext_resource type="Script" uid="uid://b7ipbpex3e8sp" path="res://script/item.gd" id="1_tn63i"]
+[ext_resource type="Texture2D" uid="uid://5cwn0eag67le" path="res://art/items/golden_sword.png" id="2_tn63i"]
+
+[resource]
+script = ExtResource("1_tn63i")
+name = "Golden_Holy_Sword"
+number = 1
+type = 0
+describe = "3333"
+texture = ExtResource("2_tn63i")
+countble = true
+attack = 30
+defense = 0
+health = 0
+speed = 0
+buy_price = 30
+sell_price = 15
+metadata/_custom_type_script = "uid://b7ipbpex3e8sp"

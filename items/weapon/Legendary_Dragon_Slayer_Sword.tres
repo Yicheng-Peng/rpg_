@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://b4a8nf0mkut3a"]
+
+[ext_resource type="Script" uid="uid://b7ipbpex3e8sp" path="res://script/item.gd" id="1_3otbi"]
+[ext_resource type="Texture2D" uid="uid://dhely6fkhuh8t" path="res://art/items/Legendary_sword.png" id="2_3otbi"]
+
+[resource]
+script = ExtResource("1_3otbi")
+name = "Legendary_Dragon_Slayer_Sword"
+number = 1
+type = 0
+describe = "4444"
+texture = ExtResource("2_3otbi")
+countble = true
+attack = 50
+defense = 10
+health = 10
+speed = 0
+buy_price = 40
+sell_price = 20
+metadata/_custom_type_script = "uid://b7ipbpex3e8sp"

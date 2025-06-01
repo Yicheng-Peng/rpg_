@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0nfxfecyjsia"]
+
+[ext_resource type="Script" uid="uid://4cv2jcw4jhyk" path="res://script/slot.gd" id="1_4v6ba"]
+
+[sub_resource type="SystemFont" id="SystemFont_jpyuo"]
+subpixel_positioning = 0
+
+[node name="Slot" type="ColorRect"]
+custom_minimum_size = Vector2(30, 30)
+offset_left = 25.0
+offset_top = 25.0
+offset_right = 55.0
+offset_bottom = 55.0
+color = Color(0.458824, 0.458824, 0.458824, 1)
+script = ExtResource("1_4v6ba")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(15, 15)
+
+[node name="Label" type="Label" parent="."]
+custom_minimum_size = Vector2(1, 1)
+layout_mode = 0
+offset_left = 23.0
+offset_top = 25.0
+offset_right = 30.0
+offset_bottom = 32.0
+theme_override_fonts/font = SubResource("SystemFont_jpyuo")
+theme_override_font_sizes/font_size = 4
+horizontal_alignment = 1
+vertical_alignment = 1

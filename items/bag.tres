@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Inventory" load_steps=10 format=3 uid="uid://bom2b21rtn7pc"]
+
+[ext_resource type="Resource" uid="uid://ce8q05d38jj7i" path="res://items/weapon/wooden_sword.tres" id="1_0k7fu"]
+[ext_resource type="Script" uid="uid://dbeyaw2bs5836" path="res://script/Inventory.gd" id="1_fetdx"]
+[ext_resource type="Resource" uid="uid://b4klm7dcoqf8h" path="res://items/weapon/Knight's Silver_Sword.tres" id="2_3ufqx"]
+[ext_resource type="Resource" uid="uid://b06m0o5outbbp" path="res://items/weapon/Golden_Holy_Sword.tres" id="3_0k7fu"]
+[ext_resource type="Resource" uid="uid://b4a8nf0mkut3a" path="res://items/weapon/Legendary_Dragon_Slayer_Sword.tres" id="4_3ufqx"]
+[ext_resource type="Resource" uid="uid://bax0cirlae0rn" path="res://items/helmet/Beginner_Wooden_Helmet.tres" id="5_6rmpb"]
+[ext_resource type="Resource" uid="uid://dhatpcwo25ulx" path="res://items/helmet/Knight's_Silver_Helmet.tres" id="6_suc3q"]
+[ext_resource type="Resource" uid="uid://dblsajp86mut" path="res://items/helmet/Golden_Holy_Helmet.tres" id="7_kptos"]
+[ext_resource type="Resource" uid="uid://c3o1mdiel3ajn" path="res://items/helmet/Legendary_Dragon_Slayer_Helmet.tres" id="8_y25j6"]
+
+[resource]
+script = ExtResource("1_fetdx")
+items = Array[Resource]([null, ExtResource("5_6rmpb"), ExtResource("7_kptos"), ExtResource("6_suc3q"), ExtResource("8_y25j6"), ExtResource("3_0k7fu"), ExtResource("2_3ufqx"), ExtResource("4_3ufqx"), ExtResource("1_0k7fu"), null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null])
+name = ""
+metadata/_custom_type_script = "uid://dbeyaw2bs5836"
