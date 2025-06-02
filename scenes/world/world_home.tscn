@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://dipto26tmw52h"]
+[gd_scene load_steps=17 format=3 uid="uid://dipto26tmw52h"]
 
 [ext_resource type="Texture2D" uid="uid://cytqhbff8fqk7" path="res://art/world_gressland/world_gressland.png" id="1_oed8y"]
 [ext_resource type="Texture2D" uid="uid://d4hs7tv1tqn6l" path="res://art/world_home/world_home.png" id="2_b30dx"]
@@ -6,6 +6,10 @@
 [ext_resource type="PackedScene" uid="uid://y81o6k1fabte" path="res://scenes/character/player.tscn" id="3_b30dx"]
 [ext_resource type="Texture2D" uid="uid://cmdq7yl6hh1i0" path="res://art/world_cave/world_cave.png" id="3_n8w4c"]
 [ext_resource type="Texture2D" uid="uid://d06wyy8bxf4ks" path="res://art/world_home/Tileset.png" id="4_p4fu4"]
+[ext_resource type="PackedScene" uid="uid://c30bfpqejoxcm" path="res://scenes/character/npc.tscn" id="7_btx5k"]
+[ext_resource type="Resource" uid="uid://cyfpncrh76lam" path="res://Resource/dialogue_with_warrior.tres" id="8_6upo2"]
+[ext_resource type="Resource" uid="uid://br50krtrunsws" path="res://Resource/dialogue_with_businesswomen.tres" id="8_qlsjx"]
+[ext_resource type="PackedScene" uid="uid://couno13kb80ex" path="res://scenes/character/enemy.tscn" id="10_npk27"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_n8w4c"]
 texture = ExtResource("1_oed8y")
@@ -2558,3 +2562,20 @@ layer_3/tile_data = PackedInt32Array(851985, 851969, 10, 458763, 851969, 10)
 
 [node name="player" parent="TileMap" instance=ExtResource("3_b30dx")]
 position = Vector2(536, 43)
+scale = Vector2(1.11207, 0.943041)
+
+[node name="Npc_warrior" parent="TileMap" instance=ExtResource("7_btx5k")]
+position = Vector2(501, 115)
+scale = Vector2(0.870836, 0.899257)
+npc_name = "warrior"
+dialogue_resource = ExtResource("8_6upo2")
+idle_animation_name = "warrior"
+
+[node name="Npc_businesswomen" parent="TileMap" instance=ExtResource("7_btx5k")]
+position = Vector2(232, 26)
+scale = Vector2(0.792362, 0.824029)
+npc_name = "businesswomen"
+dialogue_resource = ExtResource("8_qlsjx")
+idle_animation_name = "businesswomen"
+
+[node name="enemy" parent="TileMap" instance=ExtResource("10_npk27")]

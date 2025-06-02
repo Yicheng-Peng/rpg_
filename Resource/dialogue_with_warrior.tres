@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="Dialogies" load_steps=7 format=3 uid="uid://cyfpncrh76lam"]
+
+[ext_resource type="Script" uid="uid://culsjjboak18s" path="res://script/dialogue.gd" id="1_xqwqg"]
+[ext_resource type="Script" uid="uid://dyj3xwog856ae" path="res://script/dialogues.gd" id="2_uewwl"]
+
+[sub_resource type="Resource" id="Resource_uewwl"]
+script = ExtResource("1_xqwqg")
+name = "player"
+content = "Are you the warrior guarding this village?"
+show_on_left = true
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_n5d3u"]
+script = ExtResource("1_xqwqg")
+name = "warrior"
+content = "Yes. I’ve protected this land for many years"
+show_on_left = false
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_8hg21"]
+script = ExtResource("1_xqwqg")
+name = "player"
+content = "It’s an honor to meet you. I need your help."
+show_on_left = true
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_18jrb"]
+script = ExtResource("1_xqwqg")
+name = "warrior"
+content = "Then speak. If your heart is pure, I will listen."
+show_on_left = false
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[resource]
+script = ExtResource("2_uewwl")
+dialogues = Array[ExtResource("1_xqwqg")]([SubResource("Resource_uewwl"), SubResource("Resource_n5d3u"), SubResource("Resource_8hg21"), SubResource("Resource_18jrb")])
+metadata/_custom_type_script = "uid://dyj3xwog856ae"

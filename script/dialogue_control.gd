@@ -40,11 +40,23 @@ func display_next_dialogue():
 			left_avatar.texture = null
 			right_avatar.texture = dialogue.avatar
 	
-	
 func append_character(character : String):
 	text_box.text += character
 		
 func _ready():
+	# 监听所有 NPC 的 dialogue_requested 信号
+	for npc in get_tree().get_nodes_in_group("npcs"):
+		npc.connect("dialogue_requested", Callable(self, "start_dialogue_with"))
+	
+	# 初始隐藏对话框
+	visible = false
+
+func start_dialogue_with(dialogue_resource: Dialogies):
+	main_dialogue = dialogue_resource
+	dialogue_index = 0
+	text_box.text = ""
+	character_name_text.text = ""
+	visible = true
 	display_next_dialogue()
 
 func _click(event: InputEvent) -> void:
