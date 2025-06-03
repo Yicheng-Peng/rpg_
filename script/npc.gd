@@ -23,8 +23,5 @@ func _ready():
 		push_warning("未找到 Area2D 节点，无法检测靠近对话")
 
 func _on_body_entered(body: Node):
-	print("666")
 	if body.name == "player":
-		print("666")
 		emit_signal("dialogue_requested", dialogue_resource)
-		print("666")

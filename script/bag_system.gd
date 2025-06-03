@@ -1,4 +1,4 @@
-extends Control
+extends Control 
 
 var bag = preload("res://items/bag.tres")
 
@@ -22,15 +22,14 @@ var last_equipped_items = {
 	"boots": null
 }
 
-
 func _ready():
+	visible = false  # 默认隐藏背包
 	update_data_about_player()
 	for index in bag_grid_container.get_children().size():
 		update_slot(index)
 		if index == 0:
 			continue
 		bag_grid_container.get_child(index).gui_input.connect(Callable(self,"_on_gui_input").bind(index))
-		
 	bag.item_changed.connect(Callable(self,"update_slot"))
 	
 	update_slots_position()
@@ -38,6 +37,10 @@ func _ready():
 func _process(delta:float):
 	_0.global_position = get_global_mouse_position()
 	update_slots_position()
+	
+func _unhandled_input(event: InputEvent) -> void:
+	if event.is_action_pressed("bag"):  # 你需要在 Input Map 中添加此动作并绑定 B 键
+		visible = !visible
 	
 func update_slot(indexes):
 	for index in indexes:
@@ -124,7 +127,21 @@ func _on_gui_input(event,index):
 			update_equip()
 
 func update_slots_position():
-	_21_sword.global_position = Vector2(255,40)
-	_22_helmet.global_position = Vector2(345,40)
-	_23_armor.global_position = Vector2(255,80)
-	_24_boots.global_position = Vector2(345,80)
+	var sprite = $bag_ui/AnimatedSprite2D
+	var texture: Texture2D = sprite.sprite_frames.get_frame_texture(sprite.animation, 0)
+
+	
+	var sprite_size = texture.get_size()
+	var center = sprite.global_position + Vector2(-45, -70)
+	var offset = Vector2(75, 40)  # 可微调
+
+	# 四个角位置
+	var top_left = center - sprite_size / 2 - offset
+	var top_right = center + Vector2(sprite_size.x / 2, -sprite_size.y / 2) + Vector2(offset.x, -offset.y)
+	var bottom_left = center + Vector2(-sprite_size.x / 2, sprite_size.y / 2) + Vector2(-offset.x, offset.y)
+	var bottom_right = center + sprite_size / 2 + offset
+
+	_22_helmet.global_position = top_left
+	_21_sword.global_position = top_right
+	_23_armor.global_position = bottom_left
+	_24_boots.global_position = bottom_right

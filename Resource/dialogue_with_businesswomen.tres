@@ -24,6 +24,7 @@ metadata/_custom_type_script = "uid://culsjjboak18s"
 script = ExtResource("1_j5rq6")
 name = "研究生"
 content = "阿giao，我工资连1个w都没有，你给我补"
+avatar = ExtResource("2_fjgow")
 show_on_left = true
 metadata/_custom_type_script = "uid://culsjjboak18s"
 
@@ -31,6 +32,7 @@ metadata/_custom_type_script = "uid://culsjjboak18s"
 script = ExtResource("1_j5rq6")
 name = "阿giao"
 content = "天天要我补不补，我跟你补个蛋，我头都大了"
+avatar = ExtResource("2_fjgow")
 show_on_left = false
 metadata/_custom_type_script = "uid://culsjjboak18s"
 

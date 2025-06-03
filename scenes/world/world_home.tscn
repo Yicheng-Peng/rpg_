@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://dipto26tmw52h"]
+[gd_scene load_steps=19 format=3 uid="uid://dipto26tmw52h"]
 
 [ext_resource type="Texture2D" uid="uid://cytqhbff8fqk7" path="res://art/world_gressland/world_gressland.png" id="1_oed8y"]
 [ext_resource type="Texture2D" uid="uid://d4hs7tv1tqn6l" path="res://art/world_home/world_home.png" id="2_b30dx"]
@@ -10,6 +10,8 @@
 [ext_resource type="Resource" uid="uid://cyfpncrh76lam" path="res://Resource/dialogue_with_warrior.tres" id="8_6upo2"]
 [ext_resource type="Resource" uid="uid://br50krtrunsws" path="res://Resource/dialogue_with_businesswomen.tres" id="8_qlsjx"]
 [ext_resource type="PackedScene" uid="uid://couno13kb80ex" path="res://scenes/character/enemy.tscn" id="10_npk27"]
+[ext_resource type="PackedScene" uid="uid://c1f6wukkfastg" path="res://scenes/dialogue/dialogue.tscn" id="11_3uaww"]
+[ext_resource type="PackedScene" uid="uid://dfef4qa3elbd2" path="res://scenes/bag/bag_system.tscn" id="12_5xd5n"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_n8w4c"]
 texture = ExtResource("1_oed8y")
@@ -2561,7 +2563,7 @@ layer_3/name = "bridge"
 layer_3/tile_data = PackedInt32Array(851985, 851969, 10, 458763, 851969, 10)
 
 [node name="player" parent="TileMap" instance=ExtResource("3_b30dx")]
-position = Vector2(536, 43)
+position = Vector2(540, 41)
 scale = Vector2(1.11207, 0.943041)
 
 [node name="Npc_warrior" parent="TileMap" instance=ExtResource("7_btx5k")]
@@ -2579,3 +2581,16 @@ dialogue_resource = ExtResource("8_qlsjx")
 idle_animation_name = "businesswomen"
 
 [node name="enemy" parent="TileMap" instance=ExtResource("10_npk27")]
+
+[node name="UI_Layer" type="CanvasLayer" parent="TileMap"]
+
+[node name="Dialogue" parent="TileMap/UI_Layer" instance=ExtResource("11_3uaww")]
+offset_left = -1.0
+offset_top = 1.0
+offset_right = -3.0
+offset_bottom = 1.0
+scale = Vector2(1.00442, 0.993036)
+size_flags_vertical = 0
+
+[node name="bag_System" parent="TileMap/UI_Layer" instance=ExtResource("12_5xd5n")]
+scale = Vector2(2.88507, 2.7264)
