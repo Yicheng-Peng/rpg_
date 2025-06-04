@@ -107,8 +107,8 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_xwavj")
 }],
-"loop": true,
-"name": &"dead",
+"loop": false,
+"name": &"dead_slime",
 "speed": 5.0
 }, {
 "frames": [{
@@ -125,7 +125,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_8qclf")
 }],
 "loop": true,
-"name": &"idle",
+"name": &"idle_slime",
 "speed": 5.0
 }, {
 "frames": [{
@@ -148,15 +148,15 @@ animations = [{
 "texture": SubResource("AtlasTexture_s1ycm")
 }],
 "loop": true,
-"name": &"walk",
+"name": &"walk_slime",
 "speed": 5.0
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_7p1mj"]
-radius = 64.0078
+radius = 117.004
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_md0e3"]
-radius = 11.0454
+radius = 5.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4ra3w"]
 radius = 11.0
@@ -167,8 +167,9 @@ script = ExtResource("1_md0e3")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_shcg2")
-animation = &"be_attack"
-frame_progress = 0.575824
+animation = &"dead_slime"
+frame = 4
+frame_progress = 1.0
 offset = Vector2(0, -6)
 
 [node name="detection_area" type="Area2D" parent="."]
@@ -185,7 +186,7 @@ shape = SubResource("CircleShape2D_md0e3")
 [node name="enemy_hitbox" type="Area2D" parent="."]
 
 [node name="hitbox" type="CollisionShape2D" parent="enemy_hitbox"]
-position = Vector2(0, -1)
+position = Vector2(0, -3)
 shape = SubResource("CircleShape2D_4ra3w")
 
 [node name="take_damage_cooldown" type="Timer" parent="."]
@@ -198,6 +199,10 @@ offset_right = 133.0
 offset_bottom = 33.0
 scale = Vector2(0.1, 0.1)
 show_percentage = false
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+path_desired_distance = 0.5
+target_desired_distance = 1.0
 
 [connection signal="body_entered" from="detection_area" to="." method="_on_detection_area_body_entered"]
 [connection signal="body_exited" from="detection_area" to="." method="_on_detection_area_body_exited"]
