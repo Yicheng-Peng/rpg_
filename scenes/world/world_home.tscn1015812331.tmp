@@ -1,4 +1,4 @@
-[gd_scene load_steps=48 format=3 uid="uid://dipto26tmw52h"]
+[gd_scene load_steps=45 format=3 uid="uid://dipto26tmw52h"]
 
 [ext_resource type="Texture2D" uid="uid://cytqhbff8fqk7" path="res://art/world_gressland/world_gressland.png" id="1_oed8y"]
 [ext_resource type="Texture2D" uid="uid://d4hs7tv1tqn6l" path="res://art/world_home/world_home.png" id="2_b30dx"]
@@ -7,14 +7,11 @@
 [ext_resource type="Texture2D" uid="uid://cmdq7yl6hh1i0" path="res://art/world_cave/world_cave.png" id="3_n8w4c"]
 [ext_resource type="Texture2D" uid="uid://d06wyy8bxf4ks" path="res://art/world_home/Tileset.png" id="4_p4fu4"]
 [ext_resource type="PackedScene" uid="uid://c30bfpqejoxcm" path="res://scenes/character/npc.tscn" id="7_btx5k"]
-[ext_resource type="Resource" uid="uid://cyfpncrh76lam" path="res://Resource/dialogue_resource/dialogue_with_warrior.tres" id="8_6upo2"]
-[ext_resource type="Resource" uid="uid://br50krtrunsws" path="res://Resource/dialogue_resource/dialogue_with_businesswomen.tres" id="8_qlsjx"]
+[ext_resource type="Resource" uid="uid://cyfpncrh76lam" path="res://Resource/dialogue_with_warrior.tres" id="8_6upo2"]
+[ext_resource type="Resource" uid="uid://br50krtrunsws" path="res://Resource/dialogue_with_businesswomen.tres" id="8_qlsjx"]
 [ext_resource type="PackedScene" uid="uid://couno13kb80ex" path="res://scenes/character/enemy.tscn" id="10_npk27"]
 [ext_resource type="PackedScene" uid="uid://c1f6wukkfastg" path="res://scenes/dialogue/dialogue.tscn" id="11_3uaww"]
-[ext_resource type="PackedScene" uid="uid://btpdda2yig53e" path="res://scenes/chest/chest.tscn" id="11_u72hi"]
 [ext_resource type="PackedScene" uid="uid://dfef4qa3elbd2" path="res://scenes/bag/bag_system.tscn" id="12_5xd5n"]
-[ext_resource type="Script" uid="uid://b7ipbpex3e8sp" path="res://script/item.gd" id="12_dsei3"]
-[ext_resource type="Resource" uid="uid://c413d8unjx3ht" path="res://Resource/items/medicine/medecine.tres" id="14_vic3o"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_lqy8w"]
 vertices = PackedVector2Array(119.031, 197.508, 126.711, 198, 104.977, 198, 118.148, 196.469, 119.031, 182.359, 118.148, 182.563, 165.563, 164.469, 139.789, 154, 198, 154, 198, 198, 165.563, 198, 90, 157.352, 90, 154, 99.2266, 154, 196.961, 10, 286.883, 10, 266.617, 11.0781, 10, 10, 190.883, 10, 170.617, 11.0781, 492.547, 220.344, 492.547, 211.508, 493.82, 218.898, 76.5469, 76.3438, 76.5469, 67.5078, 77.8203, 74.8984, 566, 58, 566, 126.344, 564.883, 121.68, 566, 148.898, 566, 246, 550.391, 219.773, 549.391, 180.398, 269.25, 110.047, 277.938, 118, 250, 118, 546.93, 152.594, 513.953, 166, 530.602, 141.422, 162.602, 29.4219, 97.9531, 22, 258.602, 29.4219, 203.172, 35.8984, 250, 86, 268.25, 77.7109, 134.391, 75.7734, 133.391, 36.3984, 178.93, 40.5938, 101.93, 75.7734, 38, 86, 414.242, 86, 394, 93.3516, 394, 38, 299.172, 35.8984, 292.961, 10, 502, 10, 502, 26, 422.148, 118.563, 423.031, 118.359, 423.031, 133.508, 422.148, 132.469, 310, 38, 310, 72.8672, 295.656, 69.6797, 274.93, 40.5938, 538, 74, 538, 58, 538.617, 123.078, 518, 26, 518, 38, 502, 38, 346, 246, 346, 234, 442, 234, 517.93, 219.773, 442, 150, 394, 150, 394, 135.742, 469.563, 136.477, 38, 246, 10, 246, 502, 74, 494.242, 166, 433.953, 86, 455.867, 179.938, 460.688, 220.344, 469.563, 100.469, 44.6875, 76.3438, 39.8672, 35.9375, 78.2422, 22)
@@ -2750,15 +2747,20 @@ layer_3/name = "bridge"
 layer_3/tile_data = PackedInt32Array(851985, 851969, 10, 458763, 851969, 10)
 
 [node name="player" parent="NavigationRegion2D/TileMap" instance=ExtResource("3_b30dx")]
-position = Vector2(547, 39)
+position = Vector2(540, 41)
 scale = Vector2(1.11207, 0.943041)
 
 [node name="slime" parent="NavigationRegion2D/TileMap" instance=ExtResource("10_npk27")]
-position = Vector2(352, 32)
+position = Vector2(354, 34)
+enemy_name = null
+max_health = null
 speed = 60.0
+damage = null
 walk_animation = "walk_slime"
 idle_animation = "idle_slime"
 dead_animation = "dead_slime"
+patrol_radius = null
+patrol_speed = null
 
 [node name="Npc_warrior" parent="NavigationRegion2D/TileMap" instance=ExtResource("7_btx5k")]
 position = Vector2(501, 115)
@@ -2773,11 +2775,6 @@ scale = Vector2(0.792362, 0.824029)
 npc_name = "businesswomen"
 dialogue_resource = ExtResource("8_qlsjx")
 idle_animation_name = "businesswomen"
-
-[node name="Chest" parent="NavigationRegion2D/TileMap" instance=ExtResource("11_u72hi")]
-position = Vector2(357, 235)
-scale = Vector2(0.997287, 0.975948)
-items = Array[ExtResource("12_dsei3")]([ExtResource("14_vic3o")])
 
 [node name="UI_Layer" type="CanvasLayer" parent="NavigationRegion2D/TileMap"]
 

@@ -6,10 +6,7 @@ extends Node2D
 func set_item(item: Item):
 	if item != null:
 		sprite_2d.texture = item.texture
-		if item.countble:
-			label.text = str(item.number)
-		else:
-			label.text = ""
+		label.text = ""
 	else:
 		sprite_2d.texture = null
 		label.text = ""

@@ -49,6 +49,7 @@ func player_movement(delta):
 
 	move_and_slide()
 
+
 func play_anim(movement):
 	if current_dir == "left":
 		anim.flip_h = false

@@ -1,0 +1,68 @@
+[gd_scene load_steps=11 format=3 uid="uid://btpdda2yig53e"]
+
+[ext_resource type="Script" uid="uid://biqcht42knrsq" path="res://script/chest.gd" id="1_3se45"]
+[ext_resource type="Texture2D" uid="uid://dhy0gq183x8s5" path="res://art/items/chest2.png" id="2_uih34"]
+[ext_resource type="Script" uid="uid://b7ipbpex3e8sp" path="res://script/item.gd" id="2_vdnua"]
+[ext_resource type="Resource" uid="uid://b4klm7dcoqf8h" path="res://Resource/items/weapon/Knight's Silver_Sword.tres" id="3_8qlbc"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8qlbc"]
+atlas = ExtResource("2_uih34")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bw3f2"]
+atlas = ExtResource("2_uih34")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m5ma0"]
+atlas = ExtResource("2_uih34")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vdnua"]
+atlas = ExtResource("2_uih34")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8qlbc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8qlbc")
+}],
+"loop": true,
+"name": &"close",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bw3f2")
+}],
+"loop": true,
+"name": &"open",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m5ma0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vdnua")
+}],
+"loop": false,
+"name": &"opening",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_uih34"]
+radius = 27.0
+
+[node name="Chest" type="Area2D"]
+script = ExtResource("1_3se45")
+items = Array[ExtResource("2_vdnua")]([ExtResource("3_8qlbc")])
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.53125, 0.53125)
+sprite_frames = SubResource("SpriteFrames_8qlbc")
+animation = &"close"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+shape = SubResource("CircleShape2D_uih34")

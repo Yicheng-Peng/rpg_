@@ -22,3 +22,5 @@ var denfense_add = 0 #盔甲增加的防御力
 var player_alive = true #主角是否存活
 var attack_ip_player = false 
 var player_current_attack = false #主角现在是否能攻击
+
+var bag_inventory: Inventory = null
