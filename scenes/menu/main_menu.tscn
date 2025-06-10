@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://ds2vdegvi24ll"]
+[gd_scene load_steps=4 format=3 uid="uid://ds2vdegvi24ll"]
 
 [ext_resource type="Script" uid="uid://lh0xjbqvodp" path="res://scenes/menu/main_menu.gd" id="1_nl8w3"]
+[ext_resource type="Texture2D" uid="uid://b8f6sptdowxmt" path="res://art/background.png" id="2_3rkf3"]
 
 [sub_resource type="Theme" id="Theme_3rkf3"]
 
@@ -84,6 +85,7 @@ text = "BACK
 "
 
 [node name="ColorRect" type="ColorRect" parent="."]
+visible = false
 z_index = -1
 offset_left = -27.0
 offset_top = -18.0
@@ -91,6 +93,13 @@ offset_right = 1306.0
 offset_bottom = 717.0
 mouse_filter = 2
 color = Color(0.32549, 0.607843, 1, 1)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+z_index = -1
+offset_right = 1280.0
+offset_bottom = 680.0
+mouse_filter = 2
+texture = ExtResource("2_3rkf3")
 
 [connection signal="pressed" from="CenterContainer/main_button/new_play" to="." method="_on_new_play_pressed"]
 [connection signal="pressed" from="CenterContainer/main_button/continue_play" to="." method="_on_continue_play_pressed"]
