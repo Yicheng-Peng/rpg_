@@ -1,0 +1,101 @@
+[gd_scene load_steps=3 format=3 uid="uid://ds2vdegvi24ll"]
+
+[ext_resource type="Script" uid="uid://lh0xjbqvodp" path="res://scenes/menu/main_menu.gd" id="1_nl8w3"]
+
+[sub_resource type="Theme" id="Theme_3rkf3"]
+
+[node name="MainMenu" type="Node2D"]
+script = ExtResource("1_nl8w3")
+
+[node name="title" type="Label" parent="."]
+offset_right = 1280.0
+offset_bottom = 300.0
+theme_override_font_sizes/font_size = 100
+text = "NuZi Advemture"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+offset_top = 300.0
+offset_right = 1280.0
+offset_bottom = 680.0
+theme = SubResource("Theme_3rkf3")
+
+[node name="main_button" type="VBoxContainer" parent="CenterContainer"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="new_play" type="Button" parent="CenterContainer/main_button"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "NEW PLAY"
+
+[node name="continue_play" type="Button" parent="CenterContainer/main_button"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "CONTINUE PLAY"
+
+[node name="setting" type="Button" parent="CenterContainer/main_button"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "SETTING"
+
+[node name="quit" type="Button" parent="CenterContainer/main_button"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "QUIT"
+
+[node name="setting_menu" type="VBoxContainer" parent="CenterContainer"]
+visible = false
+layout_mode = 2
+
+[node name="CheckBox" type="CheckBox" parent="CenterContainer/setting_menu"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "FULL SCREEN"
+
+[node name="voice_Slider" type="HSlider" parent="CenterContainer/setting_menu"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+max_value = 1.0
+step = 0.001
+
+[node name="Label" type="Label" parent="CenterContainer/setting_menu/voice_Slider"]
+layout_mode = 0
+offset_right = 94.0
+offset_bottom = 23.0
+text = "MAIN VOICE"
+horizontal_alignment = 1
+
+[node name="back" type="Button" parent="CenterContainer/setting_menu"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "BACK
+"
+
+[node name="continue_play" type="VBoxContainer" parent="CenterContainer"]
+visible = false
+layout_mode = 2
+
+[node name="back" type="Button" parent="CenterContainer/continue_play"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "BACK
+"
+
+[node name="ColorRect" type="ColorRect" parent="."]
+z_index = -1
+offset_left = -27.0
+offset_top = -18.0
+offset_right = 1306.0
+offset_bottom = 717.0
+mouse_filter = 2
+color = Color(0.32549, 0.607843, 1, 1)
+
+[connection signal="pressed" from="CenterContainer/main_button/new_play" to="." method="_on_new_play_pressed"]
+[connection signal="pressed" from="CenterContainer/main_button/continue_play" to="." method="_on_continue_play_pressed"]
+[connection signal="pressed" from="CenterContainer/main_button/setting" to="." method="_on_setting_pressed"]
+[connection signal="pressed" from="CenterContainer/main_button/quit" to="." method="_on_quit_pressed"]
+[connection signal="value_changed" from="CenterContainer/setting_menu/voice_Slider" to="." method="_on_voice_slider_value_changed"]
+[connection signal="pressed" from="CenterContainer/setting_menu/back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="CenterContainer/continue_play/back" to="." method="_on_back_pressed"]

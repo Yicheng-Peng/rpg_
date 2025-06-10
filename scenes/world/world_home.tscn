@@ -2790,4 +2790,8 @@ scale = Vector2(1.00442, 0.993036)
 size_flags_vertical = 0
 
 [node name="bag_System" parent="NavigationRegion2D/TileMap/UI_Layer" instance=ExtResource("12_5xd5n")]
+offset_left = -119.0
+offset_top = -34.0
+offset_right = -119.0
+offset_bottom = -32.0
 scale = Vector2(2.88507, 2.7264)

@@ -11,13 +11,18 @@ config_version=5
 [application]
 
 config/name="RPG_"
-run/main_scene="uid://ca1lo8hwu8jyv"
+run/main_scene="uid://ds2vdegvi24ll"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://art/privious/icon.svg"
 
 [autoload]
 
 global="*res://script/global.gd"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=680
 
 [input]
 
