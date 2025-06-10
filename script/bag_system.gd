@@ -102,7 +102,7 @@ func update_equip():
 			update_data_about_player()
 
 func update_data_about_player():
-	data_about_player_label.text = "grade: " + str(global.grade_player) + "  \nHealth: " + str(global.health_now) + "/" + str(global.health_base + global.health_add) + "\nattack: " + str(global.attack_base + global.attack_add) + "  \ndenfense: " + str(global.denfense_base + global.denfense_add) + "\nspeed: " + str(global.speed_base + global.speed_add)
+	data_about_player_label.text = "Health: " + str(global.health_now) + "/" + str(global.health_base + global.health_add) + "\nattack: " + str(global.attack_base + global.attack_add) + "  \ndenfense: " + str(global.denfense_base + global.denfense_add) + "\nspeed: " + str(global.speed_base + global.speed_add)
 
 func _on_gui_input(event, index):
 	if event is InputEventMouseButton and event.pressed:

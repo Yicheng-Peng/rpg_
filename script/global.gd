@@ -6,6 +6,7 @@ var transition_scene = false
 
 #关于主角变量声明
 var grade_player = 1 #主角的等级
+var player_name = null
 
 var health_base = 100 #主角的基础血量
 var health_now = 100
@@ -24,3 +25,5 @@ var attack_ip_player = false
 var player_current_attack = false #主角现在是否能攻击
 
 var bag_inventory: Inventory = null
+
+var key = "niuzi"

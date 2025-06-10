@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://ds2vdegvi24ll"]
 
-[ext_resource type="Script" uid="uid://lh0xjbqvodp" path="res://scenes/menu/main_menu.gd" id="1_nl8w3"]
+[ext_resource type="Script" uid="uid://lh0xjbqvodp" path="res://script/main_menu.gd" id="1_nl8w3"]
 [ext_resource type="Texture2D" uid="uid://b8f6sptdowxmt" path="res://art/background.png" id="2_3rkf3"]
 
 [sub_resource type="Theme" id="Theme_3rkf3"]
@@ -12,7 +12,7 @@ script = ExtResource("1_nl8w3")
 offset_right = 1280.0
 offset_bottom = 300.0
 theme_override_font_sizes/font_size = 100
-text = "NuZi Advemture"
+text = "NiuZi Adventure"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -40,6 +40,11 @@ text = "CONTINUE PLAY"
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
 text = "SETTING"
+
+[node name="help" type="Button" parent="CenterContainer/main_button"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "HELP"
 
 [node name="quit" type="Button" parent="CenterContainer/main_button"]
 layout_mode = 2
@@ -84,15 +89,51 @@ theme_override_font_sizes/font_size = 30
 text = "BACK
 "
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="create_new_game" type="VBoxContainer" parent="CenterContainer"]
 visible = false
-z_index = -1
-offset_left = -27.0
-offset_top = -18.0
-offset_right = 1306.0
-offset_bottom = 717.0
-mouse_filter = 2
-color = Color(0.32549, 0.607843, 1, 1)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CenterContainer/create_new_game"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Please enter your name: "
+
+[node name="name" type="LineEdit" parent="CenterContainer/create_new_game"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+alignment = 1
+
+[node name="enter" type="Button" parent="CenterContainer/create_new_game"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "ENTER"
+
+[node name="back" type="Button" parent="CenterContainer/create_new_game"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "BACK
+"
+
+[node name="help" type="VBoxContainer" parent="CenterContainer"]
+visible = false
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CenterContainer/help"]
+layout_mode = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "W-move up      S-move down
+A-move left     D-move right
+B-open/close the bag system
+C-continue the dialogue
+ESC-call the menu to save game
+/return to main menu"
+
+[node name="back" type="Button" parent="CenterContainer/help"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "BACK
+"
 
 [node name="TextureRect" type="TextureRect" parent="."]
 z_index = -1
@@ -104,7 +145,11 @@ texture = ExtResource("2_3rkf3")
 [connection signal="pressed" from="CenterContainer/main_button/new_play" to="." method="_on_new_play_pressed"]
 [connection signal="pressed" from="CenterContainer/main_button/continue_play" to="." method="_on_continue_play_pressed"]
 [connection signal="pressed" from="CenterContainer/main_button/setting" to="." method="_on_setting_pressed"]
+[connection signal="pressed" from="CenterContainer/main_button/help" to="." method="_on_help_pressed"]
 [connection signal="pressed" from="CenterContainer/main_button/quit" to="." method="_on_quit_pressed"]
 [connection signal="value_changed" from="CenterContainer/setting_menu/voice_Slider" to="." method="_on_voice_slider_value_changed"]
 [connection signal="pressed" from="CenterContainer/setting_menu/back" to="." method="_on_back_pressed"]
 [connection signal="pressed" from="CenterContainer/continue_play/back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="CenterContainer/create_new_game/enter" to="." method="_on_enter_pressed"]
+[connection signal="pressed" from="CenterContainer/create_new_game/back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="CenterContainer/help/back" to="." method="_on_back_pressed"]
