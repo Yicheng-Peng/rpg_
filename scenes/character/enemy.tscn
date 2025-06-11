@@ -167,9 +167,8 @@ script = ExtResource("1_md0e3")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_shcg2")
-animation = &"dead_slime"
-frame = 4
-frame_progress = 1.0
+animation = &"idle_slime"
+frame_progress = 0.973563
 offset = Vector2(0, -6)
 
 [node name="detection_area" type="Area2D" parent="."]

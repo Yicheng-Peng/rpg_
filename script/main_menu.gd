@@ -20,11 +20,8 @@ func _on_continue_play_pressed() -> void:
 		print("❌ 读取失败")
 		return
 	global.current_scene = file.get_value("scene", "current_scene", "world")
-	global.next_scene = file.get_value("scene", "next_scene", "")
-	global.transition_scene = file.get_value("scene", "transition_scene", false)
 
 	global.player_name = file.get_value("player", "name")
-	global.grade_player = file.get_value("player", "grade")
 	global.health_base = file.get_value("player", "health_base")
 	global.health_now = file.get_value("player", "health_now")
 	global.health_player = file.get_value("player", "health_player")

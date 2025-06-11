@@ -1,11 +1,8 @@
 extends Node
 
-var current_scene = "world"
-var next_scene = ""
-var transition_scene = false
+var current_scene = ""
+var current_scene_name = ""
 
-#关于主角变量声明
-var grade_player = 1 #主角的等级
 var player_name = null
 
 var health_base = 100 #主角的基础血量

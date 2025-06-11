@@ -1,8 +1,9 @@
-[gd_scene load_steps=49 format=3 uid="uid://dipto26tmw52h"]
+[gd_scene load_steps=53 format=3 uid="uid://dipto26tmw52h"]
 
+[ext_resource type="Script" uid="uid://kxoa84oe5bop" path="res://script/world_home.gd" id="1_mci0k"]
 [ext_resource type="Texture2D" uid="uid://cytqhbff8fqk7" path="res://art/world_gressland/world_gressland.png" id="1_oed8y"]
 [ext_resource type="Texture2D" uid="uid://d4hs7tv1tqn6l" path="res://art/world_home/world_home.png" id="2_b30dx"]
-[ext_resource type="Texture2D" uid="uid://cl02ogoj3cdke" path="res://art/world_home/Object.png" id="2_jscgt"]
+[ext_resource type="Texture2D" uid="uid://cl02ogoj3cdke" path="res://art/world_gressland/Object.png" id="2_jscgt"]
 [ext_resource type="PackedScene" uid="uid://y81o6k1fabte" path="res://scenes/character/player.tscn" id="3_b30dx"]
 [ext_resource type="Texture2D" uid="uid://cmdq7yl6hh1i0" path="res://art/world_cave/world_cave.png" id="3_n8w4c"]
 [ext_resource type="Texture2D" uid="uid://d06wyy8bxf4ks" path="res://art/world_home/Tileset.png" id="4_p4fu4"]
@@ -16,6 +17,8 @@
 [ext_resource type="Script" uid="uid://b7ipbpex3e8sp" path="res://script/item.gd" id="12_dsei3"]
 [ext_resource type="Resource" uid="uid://c413d8unjx3ht" path="res://Resource/items/medicine/medecine.tres" id="14_vic3o"]
 [ext_resource type="PackedScene" uid="uid://kp2i1ffekjkn" path="res://scenes/menu/game_in_menu.tscn" id="16_dsei3"]
+[ext_resource type="PackedScene" uid="uid://bhc11qkegaiwi" path="res://scenes/world/fade_layer.tscn" id="16_y586n"]
+[ext_resource type="Script" uid="uid://cvg3ks776b8y8" path="res://script/to_world_glassland.gd" id="17_nil68"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_lqy8w"]
 vertices = PackedVector2Array(119.031, 197.508, 126.711, 198, 104.977, 198, 118.148, 196.469, 119.031, 182.359, 118.148, 182.563, 165.563, 164.469, 139.789, 154, 198, 154, 198, 198, 165.563, 198, 90, 157.352, 90, 154, 99.2266, 154, 196.961, 10, 286.883, 10, 266.617, 11.0781, 10, 10, 190.883, 10, 170.617, 11.0781, 492.547, 220.344, 492.547, 211.508, 493.82, 218.898, 76.5469, 76.3438, 76.5469, 67.5078, 77.8203, 74.8984, 566, 58, 566, 126.344, 564.883, 121.68, 566, 148.898, 566, 246, 550.391, 219.773, 549.391, 180.398, 269.25, 110.047, 277.938, 118, 250, 118, 546.93, 152.594, 513.953, 166, 530.602, 141.422, 162.602, 29.4219, 97.9531, 22, 258.602, 29.4219, 203.172, 35.8984, 250, 86, 268.25, 77.7109, 134.391, 75.7734, 133.391, 36.3984, 178.93, 40.5938, 101.93, 75.7734, 38, 86, 414.242, 86, 394, 93.3516, 394, 38, 299.172, 35.8984, 292.961, 10, 502, 10, 502, 26, 422.148, 118.563, 423.031, 118.359, 423.031, 133.508, 422.148, 132.469, 310, 38, 310, 72.8672, 295.656, 69.6797, 274.93, 40.5938, 538, 74, 538, 58, 538.617, 123.078, 518, 26, 518, 38, 502, 38, 346, 246, 346, 234, 442, 234, 517.93, 219.773, 442, 150, 394, 150, 394, 135.742, 469.563, 136.477, 38, 246, 10, 246, 502, 74, 494.242, 166, 433.953, 86, 455.867, 179.938, 460.688, 220.344, 469.563, 100.469, 44.6875, 76.3438, 39.8672, 35.9375, 78.2422, 22)
@@ -2728,7 +2731,11 @@ sources/4 = SubResource("TileSetAtlasSource_papf4")
 sources/1 = SubResource("TileSetAtlasSource_0ryis")
 sources/3 = SubResource("TileSetAtlasSource_btx5k")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dsei3"]
+size = Vector2(61, 55)
+
 [node name="world_home" type="Node2D"]
+script = ExtResource("1_mci0k")
 
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
 navigation_polygon = SubResource("NavigationPolygon_lqy8w")
@@ -2756,6 +2763,15 @@ scale = Vector2(1.11207, 0.943041)
 
 [node name="slime" parent="NavigationRegion2D/TileMap" instance=ExtResource("10_npk27")]
 position = Vector2(352, 32)
+enemy_name = "slime"
+speed = 60.0
+walk_animation = "walk_slime"
+idle_animation = "idle_slime"
+dead_animation = "dead_slime"
+
+[node name="slime2" parent="NavigationRegion2D/TileMap" instance=ExtResource("10_npk27")]
+position = Vector2(445, 174)
+enemy_name = "slime"
 speed = 60.0
 walk_animation = "walk_slime"
 idle_animation = "idle_slime"
@@ -2798,3 +2814,15 @@ offset_bottom = -12.0
 scale = Vector2(2.88507, 2.7264)
 
 [node name="GameInMenu" parent="NavigationRegion2D/TileMap/UI_Layer" instance=ExtResource("16_dsei3")]
+
+[node name="FadeLayer" parent="NavigationRegion2D/TileMap/UI_Layer" instance=ExtResource("16_y586n")]
+
+[node name="to_world_glassland" type="Area2D" parent="NavigationRegion2D/TileMap"]
+position = Vector2(580, -27)
+script = ExtResource("17_nil68")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NavigationRegion2D/TileMap/to_world_glassland"]
+position = Vector2(25.5, 54.5)
+shape = SubResource("RectangleShape2D_dsei3")
+
+[connection signal="body_entered" from="NavigationRegion2D/TileMap/to_world_glassland" to="NavigationRegion2D/TileMap/to_world_glassland" method="_on_body_entered"]

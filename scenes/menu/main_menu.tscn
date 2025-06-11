@@ -16,6 +16,14 @@ text = "NiuZi Adventure"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 314.0
+offset_top = 301.0
+offset_right = 971.0
+offset_bottom = 668.0
+size_flags_horizontal = 4
+color = Color(0, 0, 0, 0.501961)
+
 [node name="CenterContainer" type="CenterContainer" parent="."]
 offset_top = 300.0
 offset_right = 1280.0
@@ -50,6 +58,11 @@ text = "HELP"
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
 text = "QUIT"
+
+[node name="Label" type="Label" parent="CenterContainer/main_button"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "please read help when you first game"
 
 [node name="setting_menu" type="VBoxContainer" parent="CenterContainer"]
 visible = false
@@ -120,6 +133,7 @@ layout_mode = 2
 
 [node name="Label" type="Label" parent="CenterContainer/help"]
 layout_mode = 2
+size_flags_horizontal = 4
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 30
 text = "W-move up      S-move down

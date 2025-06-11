@@ -64,3 +64,7 @@ func show_item_popup(text: String):
 	tween.tween_property(label, "position:y", label.position.y - 32, 1.2)
 	tween.tween_property(label, "modulate:a", 0.0, 1.2)
 	tween.tween_callback(label.queue_free)
+
+
+func _on_to_world_home_area_shape_entered(area_rid: RID, area: Area2D, area_shape_index: int, local_shape_index: int) -> void:
+	pass # Replace with function body.

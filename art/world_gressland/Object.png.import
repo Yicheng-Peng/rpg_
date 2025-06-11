@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cl02ogoj3cdke"
-path="res://.godot/imported/Object.png-8f9692904f15bfafbab89a5213bf8260.ctex"
+path="res://.godot/imported/Object.png-7cafefb41f8f7d7ad51dcc23f906424d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/world_home/Object.png"
-dest_files=["res://.godot/imported/Object.png-8f9692904f15bfafbab89a5213bf8260.ctex"]
+source_file="res://art/world_gressland/Object.png"
+dest_files=["res://.godot/imported/Object.png-7cafefb41f8f7d7ad51dcc23f906424d.ctex"]
 
 [params]
 

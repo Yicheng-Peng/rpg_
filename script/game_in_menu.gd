@@ -12,8 +12,6 @@ func _on_save_pressed() -> void:
 	file.set_value(global.player_name,"name",global.player_name)
 	# 场景信息
 	file.set_value("scene", "current_scene", global.current_scene)
-	file.set_value("scene", "next_scene", global.next_scene)
-	file.set_value("scene", "transition_scene", global.transition_scene)
 
 	# 主角基本属性
 	file.set_value("player", "name", global.player_name)
