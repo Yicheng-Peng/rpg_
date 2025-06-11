@@ -235,10 +235,9 @@ script = ExtResource("1_p5ooc")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(5.68434e-14, -1.37972)
-scale = Vector2(1.06514, 0.954115)
+scale = Vector2(0.672893, 0.72202)
 sprite_frames = SubResource("SpriteFrames_xuefa")
-animation = &"bro"
-frame_progress = 0.662319
+animation = &"elf_green"
 speed_scale = 0.5
 
 [node name="Area2D" type="Area2D" parent="."]

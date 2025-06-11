@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Dialogies" load_steps=14 format=3 uid="uid://mehh0tjw2x0m"]
+[gd_resource type="Resource" script_class="Dialogies" load_steps=17 format=3 uid="uid://mehh0tjw2x0m"]
 
 [ext_resource type="Script" uid="uid://culsjjboak18s" path="res://script/dialogue.gd" id="1_5wlnc"]
 [ext_resource type="Script" uid="uid://dyj3xwog856ae" path="res://script/dialogues.gd" id="2_d5ybt"]
@@ -71,7 +71,7 @@ metadata/_custom_type_script = "uid://culsjjboak18s"
 [sub_resource type="Resource" id="Resource_82nmi"]
 script = ExtResource("1_5wlnc")
 name = ""
-content = "Maybe… just maybe… the friendly-looking NPC standing right next to you knows something."
+content = "Maybe… just maybe… the friendly-looking NPC standing right next to you knows something. Press 'C' to talk with him."
 avatar = ExtResource("2_f67d5")
 show_on_left = false
 metadata/_custom_type_script = "uid://culsjjboak18s"
@@ -84,7 +84,32 @@ avatar = ExtResource("2_f67d5")
 show_on_left = false
 metadata/_custom_type_script = "uid://culsjjboak18s"
 
+[sub_resource type="Resource" id="Resource_f67d5"]
+script = ExtResource("1_5wlnc")
+name = ""
+content = "And if you meet any problems, please press 'ESC' for help. "
+avatar = ExtResource("2_f67d5")
+show_on_left = false
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_4wnw5"]
+script = ExtResource("1_5wlnc")
+name = ""
+content = "And most, most, most importantly — remember to press ‘ESC’ to open the menu and save your game progress, or else all your effort will be gone!"
+avatar = ExtResource("2_f67d5")
+show_on_left = false
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_8v1wg"]
+script = ExtResource("1_5wlnc")
+name = ""
+content = "Oh oh oh, don’t worry about your game data’s safety — your save file will be encrypted!
+Now, are you ready to begin your journey?"
+avatar = ExtResource("2_f67d5")
+show_on_left = false
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
 [resource]
 script = ExtResource("2_d5ybt")
-dialogues = Array[ExtResource("1_5wlnc")]([SubResource("Resource_5wlnc"), SubResource("Resource_d5ybt"), SubResource("Resource_r8m3g"), SubResource("Resource_ly8gl"), SubResource("Resource_tr7nj"), SubResource("Resource_7ckp7"), SubResource("Resource_ogn32"), SubResource("Resource_5dk14"), SubResource("Resource_82nmi"), SubResource("Resource_ji7ng")])
+dialogues = Array[ExtResource("1_5wlnc")]([SubResource("Resource_5wlnc"), SubResource("Resource_d5ybt"), SubResource("Resource_r8m3g"), SubResource("Resource_ly8gl"), SubResource("Resource_tr7nj"), SubResource("Resource_7ckp7"), SubResource("Resource_ogn32"), SubResource("Resource_5dk14"), SubResource("Resource_82nmi"), SubResource("Resource_ji7ng"), SubResource("Resource_f67d5"), SubResource("Resource_4wnw5"), SubResource("Resource_8v1wg")])
 metadata/_custom_type_script = "uid://dyj3xwog856ae"

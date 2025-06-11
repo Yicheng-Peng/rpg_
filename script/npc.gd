@@ -7,6 +7,8 @@ class_name NPCBase
 
 signal dialogue_requested(dialogue: Dialogies)
 
+var player_in_range := false  # 标记玩家是否在范围内
+
 func _ready():
 	add_to_group("npcs")
 
@@ -19,11 +21,20 @@ func _ready():
 	# 注册靠近检测事件
 	if $Area2D:
 		$Area2D.connect("body_entered", Callable(self, "_on_body_entered"))
+		$Area2D.connect("body_exited", Callable(self, "_on_body_exited"))
 	else:
 		push_warning("未找到 Area2D 节点，无法检测靠近对话")
 
 func _on_body_entered(body: Node):
 	if body.name == "player":
-		print(dialogue_resource)
+		player_in_range = true
+		
+func _on_body_exited(body: Node):
+	if body.name == "player":
+		player_in_range = false
+
+func _process(delta: float) -> void:
+	if player_in_range and Input.is_action_just_pressed("continue_dialogue"):
+		print("触发对话：", dialogue_resource)
 		emit_signal("dialogue_requested", dialogue_resource)
-"res://art/avator/you.png"
+		player_in_range = false

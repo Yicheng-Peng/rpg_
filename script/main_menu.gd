@@ -18,6 +18,8 @@ func _on_continue_play_pressed() -> void:
 	var err = file.load_encrypted_pass("user://niuzi_game_save_data", global.key)
 	if err != OK:
 		print("❌ 读取失败")
+		show_error_popup("    No save data found. 
+		Please start a new game.")
 		return
 	global.current_scene = file.get_value("scene", "current_scene", "world")
 
@@ -69,3 +71,35 @@ func _on_voice_slider_value_changed(value: float) -> void:
 func _on_help_pressed() -> void:
 	$CenterContainer/main_button.visible = false
 	$CenterContainer/help.visible = true
+
+#func show_error_popup(message: String) -> void:
+	#var popup = $CenterContainer/main_button/continue_play/error_popup
+	#var label = popup.get_node("Label")
+#
+	## 设置英文内容
+	#label.text = message
+#
+	## 弹出显示
+	#popup.modulate.a = 1.0
+	#popup.popup_centered()
+#
+	#await get_tree().create_timer(2.0).timeout
+#
+	## 渐隐隐藏
+	#var tween := create_tween()
+	#tween.tween_property(popup, "modulate:a", 0.0, 1.0)
+	#await tween.finished
+	#popup.hide()
+#
+	## 使用 Tween 实现渐隐效果
+	#tween.tween_property(popup, "modulate:a", 0.0, 1.0)
+	#await tween.finished
+	#popup.hide()
+	
+func show_error_popup(message: String) -> void:
+	var popup = $CenterContainer/main_button/continue_play/error_popup
+	popup.get_node("Label").text = message
+	popup.popup_centered()
+
+	await get_tree().create_timer(2.0).timeout
+	popup.hide()

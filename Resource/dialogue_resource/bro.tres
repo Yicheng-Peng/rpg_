@@ -83,7 +83,7 @@ script = ExtResource("1_fy6p4")
 name = "you"
 content = "Nice! Free stuff. I like this quest already."
 avatar = ExtResource("3_ra2bt")
-show_on_left = false
+show_on_left = true
 metadata/_custom_type_script = "uid://culsjjboak18s"
 
 [sub_resource type="Resource" id="Resource_pl1nk"]
