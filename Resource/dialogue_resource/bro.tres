@@ -1,0 +1,140 @@
+[gd_resource type="Resource" script_class="Dialogies" load_steps=21 format=3 uid="uid://dnqywuoun1h0t"]
+
+[ext_resource type="Script" uid="uid://culsjjboak18s" path="res://script/dialogue.gd" id="1_fy6p4"]
+[ext_resource type="Script" uid="uid://dyj3xwog856ae" path="res://script/dialogues.gd" id="2_0c6hi"]
+[ext_resource type="Texture2D" uid="uid://c8omm0u4fp1l6" path="res://art/avator/bro.png" id="2_p81ud"]
+[ext_resource type="Texture2D" uid="uid://iatf5jjernvc" path="res://art/avator/you.png" id="3_ra2bt"]
+
+[sub_resource type="Resource" id="Resource_uygd3"]
+script = ExtResource("1_fy6p4")
+name = "Jack"
+content = "Hey bro! So… I heard you're off to defeat the Demon Lord.
+"
+avatar = ExtResource("2_p81ud")
+show_on_left = false
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_ihkck"]
+script = ExtResource("1_fy6p4")
+name = "you"
+content = "Word travels fast, huh?"
+avatar = ExtResource("3_ra2bt")
+show_on_left = true
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_1ks2u"]
+script = ExtResource("1_fy6p4")
+name = "Jack"
+content = "As your brother, there's no way I'm letting you go alone!"
+avatar = ExtResource("2_p81ud")
+show_on_left = false
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_x1wa8"]
+script = ExtResource("1_fy6p4")
+name = "you"
+content = "Wow, that actually means a lot. So… you're coming?"
+avatar = ExtResource("3_ra2bt")
+show_on_left = true
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_bqol8"]
+script = ExtResource("1_fy6p4")
+name = "Jack"
+content = "Uh... About that... My pig’s pregnant. Like, very pregnant. I have to help her give birth."
+avatar = ExtResource("2_p81ud")
+show_on_left = false
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_ywlrh"]
+script = ExtResource("1_fy6p4")
+name = "you"
+content = "...You’re ditching me for a pig?"
+avatar = ExtResource("3_ra2bt")
+show_on_left = true
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_28ciy"]
+script = ExtResource("1_fy6p4")
+name = "Jack"
+content = "Hey, family is family! Speaking of help—see that treasure chest near the river?"
+avatar = ExtResource("2_p81ud")
+show_on_left = false
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_r61ev"]
+script = ExtResource("1_fy6p4")
+name = "you"
+content = "Yeah, kind of hard to miss."
+avatar = ExtResource("3_ra2bt")
+show_on_left = true
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_utgjo"]
+script = ExtResource("1_fy6p4")
+name = "Jack"
+content = "Just walk up to it and BAM—it opens automatically. There’s a potion inside, restores 50 HP."
+avatar = ExtResource("2_p81ud")
+show_on_left = false
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_hmmn2"]
+script = ExtResource("1_fy6p4")
+name = "you"
+content = "Nice! Free stuff. I like this quest already."
+avatar = ExtResource("3_ra2bt")
+show_on_left = false
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_pl1nk"]
+script = ExtResource("1_fy6p4")
+name = "Jack"
+content = "Open your bag with the B key, drag the potion into any of the four gear slots. You’ll be healed instantly."
+avatar = ExtResource("2_p81ud")
+show_on_left = false
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_nbnfr"]
+script = ExtResource("1_fy6p4")
+name = "you"
+content = "Drag, drop, drink. Got it. I’m a pro already."
+avatar = ExtResource("3_ra2bt")
+show_on_left = true
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_qbrvi"]
+script = ExtResource("1_fy6p4")
+name = "Jack"
+content = "Also, that girl near the well? She said she wants to talk to you. Might be important!"
+avatar = ExtResource("2_p81ud")
+show_on_left = false
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_jhn4k"]
+script = ExtResource("1_fy6p4")
+name = "you"
+content = "Oh great. It’s not another pig situation, is it?"
+avatar = ExtResource("3_ra2bt")
+show_on_left = true
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_6l5qc"]
+script = ExtResource("1_fy6p4")
+name = "Jack"
+content = "Nah. This one’s all you, hero."
+avatar = ExtResource("2_p81ud")
+show_on_left = false
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_lhqp6"]
+script = ExtResource("1_fy6p4")
+name = "you"
+content = "Thanks… I think."
+avatar = ExtResource("3_ra2bt")
+show_on_left = true
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[resource]
+script = ExtResource("2_0c6hi")
+dialogues = Array[ExtResource("1_fy6p4")]([SubResource("Resource_uygd3"), SubResource("Resource_ihkck"), SubResource("Resource_1ks2u"), SubResource("Resource_x1wa8"), SubResource("Resource_bqol8"), SubResource("Resource_ywlrh"), SubResource("Resource_28ciy"), SubResource("Resource_r61ev"), SubResource("Resource_utgjo"), SubResource("Resource_hmmn2"), SubResource("Resource_pl1nk"), SubResource("Resource_nbnfr"), SubResource("Resource_qbrvi"), SubResource("Resource_jhn4k"), SubResource("Resource_6l5qc"), SubResource("Resource_lhqp6")])
+metadata/_custom_type_script = "uid://dyj3xwog856ae"

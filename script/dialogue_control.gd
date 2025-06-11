@@ -59,6 +59,16 @@ func start_dialogue_with(dialogue_resource: Dialogies):
 	visible = true
 	display_next_dialogue()
 
-func _click(event: InputEvent) -> void:
-	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
+#func _click(event: InputEvent) -> void:
+	#if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
+		#display_next_dialogue()
+		
+func _unhandled_input(event: InputEvent) -> void:
+	if visible and event.is_action_pressed("continue_dialogue"):
 		display_next_dialogue()
+		
+func start_dialogue_with_yield(dialogue_resource: Dialogies) -> void:
+	start_dialogue_with(dialogue_resource)
+
+	while visible:
+		await get_tree().process_frame

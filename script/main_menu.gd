@@ -10,7 +10,7 @@ func _on_new_play_pressed() -> void:
 	$CenterContainer/create_new_game.visible = true
 	
 func _on_enter_pressed() -> void:
-	get_tree().change_scene_to_file("res://scenes/world/world_home.tscn")
+	get_tree().change_scene_to_file("res://scenes/world/new_game_introduction.tscn")
 	global.player_name = $CenterContainer/create_new_game/name.text
 
 func _on_continue_play_pressed() -> void:

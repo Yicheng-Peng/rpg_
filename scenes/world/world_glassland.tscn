@@ -1,4 +1,4 @@
-[gd_scene load_steps=63 format=3 uid="uid://ca1lo8hwu8jyv"]
+[gd_scene load_steps=67 format=3 uid="uid://ca1lo8hwu8jyv"]
 
 [ext_resource type="Script" uid="uid://bg41wpmmefke4" path="res://world_glassland.gd" id="1_nvc2c"]
 [ext_resource type="Texture2D" uid="uid://d4hs7tv1tqn6l" path="res://art/world_home/world_home.png" id="1_ye8m0"]
@@ -22,7 +22,7 @@
 [ext_resource type="PackedScene" uid="uid://dfef4qa3elbd2" path="res://scenes/bag/bag_system.tscn" id="17_cqlkv"]
 [ext_resource type="Resource" uid="uid://ce8q05d38jj7i" path="res://Resource/items/weapon/wooden_sword.tres" id="17_ghemr"]
 [ext_resource type="PackedScene" uid="uid://kp2i1ffekjkn" path="res://scenes/menu/game_in_menu.tscn" id="18_mdiqh"]
-[ext_resource type="Script" uid="uid://tb6mx6jl2sur" path="res://scenes/world/to_world_dark.gd" id="21_mdiqh"]
+[ext_resource type="Script" uid="uid://tb6mx6jl2sur" path="res://script/to_world_dark.gd" id="21_mdiqh"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_yxvax"]
 vertices = PackedVector2Array(89.75, 20.5, 57.9609, 22.1484, 57.9609, 10, 80.7734, 10, 466.008, 249.672, 457.18, 249.672, 459.492, 249.398, 427.117, 249.672, 345.242, 249.672, 347.547, 249.398, 140.68, 107.383, 252.07, 104.531, 263.18, 105.719, 261.602, 125.383, 236.344, 124.094, 427.477, 54.6406, 476.383, 42.4609, 491.859, 39.6094, 502.656, 40.7578, 499.117, 52.0938, 485.391, 60.4375, 460.148, 59.1719, 187.688, 87.1016, 195.398, 84.5313, 214.094, 91.1484, 555.383, 119.531, 565.5, 39.0938, 565.5, 168.523, 556.313, 156.07, 565.5, 10, 565.5, 12.5625, 565.32, 11.7734, 475.453, 200.703, 502.969, 186.859, 517.539, 185.172, 517.539, 237.211, 501.367, 238.969, 476.383, 237.211, 469.109, 207.953, 373.953, 123.609, 380.219, 156.547, 367.727, 171.328, 363.563, 168.25, 357.5, 141.602, 355.258, 116.992, 156.133, 39.6094, 156.406, 59.1719, 143.922, 73.9531, 139.758, 70.8672, 133.703, 44.2266, 143.922, 25.2578, 204.352, 140.313, 191.859, 155.133, 187.703, 152.031, 181.672, 125.383, 172.391, 189, 159.906, 203.813, 155.742, 200.703, 149.68, 174.047, 428.156, 221.461, 415.68, 236.273, 411.523, 233.156, 405.461, 206.531, 268.563, 188.523, 307.297, 181.922, 326, 188.523, 293.547, 190.289, 268.297, 189, 508.359, 156.07, 515.117, 149.453, 533.813, 156.07, 517.359, 157.82, 549.352, 92.9219, 550.93, 40.7969, 549.047, 126.82, 540.328, 58.6875, 533.852, 32.6094, 539.82, 39.6094, 233.969, 160.781, 230.859, 147.109, 236.078, 153.227, 234.867, 157.922, 43.0391, 141.688, 40, 151.391, 37.7813, 141.602, 44.25, 136.992, 282.828, 76.7734, 279.789, 86.4609, 277.57, 76.6719, 284.031, 72.0703, 314.797, 157.922, 313.898, 160.781, 309.539, 141.602, 491.867, 185.688, 195.969, 159.93, 186.922, 157.922, 319.773, 155.117, 323.883, 159.938, 220.609, 188.523, 218.898, 206.609, 211.367, 230.609, 203.703, 216.938, 197.641, 190.289, 198.117, 188.523, 12.5313, 140.313, 10, 143.313, 10, 58.6875, 57.9609, 58.6875, 12.5391, 205.242, 9.99219, 208.242, 10, 194.758, 10, 249.672, 10, 231.688, 12.2813, 234.367, 10, 166.773, 12.2813, 169.453, 534.961, 121.953, 535.688, 128.367, 522.617, 125.461, 139.758, 152.031, 143.922, 138.867, 156.141, 153.227, 133.703, 125.383, 223.844, 138.883, 226, 141.406, 172.141, 218.141, 181.672, 238.969, 156.406, 237.703, 91.8125, 216.938, 135.297, 203.094, 124.188, 201.922, 391.078, 235.547, 379.953, 234.367, 303.781, 236.273, 315.219, 249.672, 280, 249.672, 277.57, 238.969, 379.563, 87.1016, 407.063, 57.0313, 447.648, 73.9609, 456.359, 84.1719, 451.156, 100.758, 437.43, 109.141, 412.188, 107.852, 389.188, 94.3594, 519.789, 168.523, 469.867, 107.383, 474.656, 125.461, 467.156, 149.453, 443.492, 135.789, 527.578, 25.2734, 531.297, 29.6328, 521.68, 30.7578, 523.813, 120.758, 501.102, 126.82, 511.602, 106.406, 479.602, 25.2813, 469.117, 13.2109, 517.359, 11.7734, 540.078, 10.4766, 469.422, 174.047, 479.602, 171.352, 492.109, 156.547, 485.852, 156.07, 295.148, 170.641, 311.406, 168.727, 284.031, 169.453, 271.797, 155.117, 261.289, 159.281, 267.633, 152.031, 216.133, 170.531, 231.477, 168.727, 227.367, 181.922, 453.883, 42.4609, 435.188, 35.8438, 421.461, 27.9766, 442.688, 11.8828, 252.328, 237.703, 252.578, 237.211, 279.172, 219.328, 299.633, 216.938, 316.258, 221.461, 230.094, 237.211, 242.211, 249.672, 184.094, 249.672, 111.922, 187.57, 85.7266, 190.289, 367.727, 220.023, 341.531, 222.75, 348.492, 188.523, 380.219, 205.242, 167.273, 154.398, 179.422, 181.922, 183.25, 219.328, 456.711, 237.211, 476.133, 237.703, 156.406, 124.094, 332.25, 140.313, 316.523, 107.383, 268.047, 218.141, 245.313, 207.953, 255.82, 203.813, 95.2813, 45.5313, 93.9219, 23.5625, 103.32, 24.5703, 492.109, 10.4766, 82.3516, 249.672, 23.3984, 235.547, 43.8438, 233.156, 517.844, 58.6875, 524.094, 91.6328, 491.453, 87.1016, 492.367, 107.383, 487.453, 87.5625, 344.008, 170.531, 379.953, 185.68, 202.898, 60.5391, 181.672, 60.4375, 187.703, 38.4063, 57.9609, 45.5391, 66.4375, 45.9688, 444.156, 172.781, 423.039, 138.18, 251.656, 54.6406, 252.328, 75.3984, 239.828, 90.1875, 236.594, 91.1484, 229.328, 61.8984, 231.211, 57.0313, 399.672, 122.68, 396.453, 123.609, 247.938, 160.828, 247.203, 154.398, 23.3906, 170.641, 37.7813, 206.531, 395.938, 55.8438, 373.469, 60.4375, 383.703, 41.5313, 348.242, 59.1719, 309.539, 44.2266, 565.5, 237.211, 565.5, 249.672, 503.797, 249.672, 455.031, 203.094, 455.75, 209.523, 442.688, 206.609, 443.891, 201.922, 146.289, 249.672, 117.711, 238.969, 121, 10, 362.758, 93.0313, 309.258, 78.1328, 347.977, 88.2969, 282.844, 103.422, 294.023, 107.383, 284.281, 140.313, 120.141, 249.672, 92.4688, 237.703, 71.3516, 219.328, 60.2266, 218.141, 48, 203.813, 437.891, 221.953, 391.07, 186.859, 411.523, 184.492, 431.672, 187.563, 246.07, 188.523, 231.953, 209.523, 124.453, 172.781, 119.313, 154.398, 60.4766, 189, 43.0469, 168.344, 54.2266, 172.297, 76.75, 172.297, 487.727, 128.367, 359.102, 89.4922, 375.82, 95.9063, 405.461, 157.82, 411.938, 136.992, 108.188, 153.227, 95.9531, 138.883, 69.4609, 143.047, 75.8125, 135.789, 55.3594, 138.18, 56.1094, 144.602, 32.0234, 122.68, 44.5, 107.852, 77.4219, 46.3125, 69.75, 109.141, 245.602, 27.9766, 271.789, 57.7266, 284.289, 42.9375, 181.672, 11.7734, 207.867, 41.5234, 220.094, 55.8438, 215.969, 63.4531, 220.352, 26.7109, 108.453, 124.094, 99.4688, 100.758, 118.18, 107.383, 315.602, 70.8672, 335.742, 73.9609, 167.273, 89.4922, 156.133, 88.2969, 133.422, 78.1328, 119.313, 73.2578, 120.07, 79.6797, 107, 76.7734, 108.188, 72.0703, 108.453, 42.9375, 123.773, 22.1797, 95.9531, 57.7266, 396.188, 26.7109, 295.148, 73.2578, 295.898, 79.6797, 167.273, 40.7969, 156.406, 10.4766, 455.75, 14.7578)
@@ -2308,7 +2308,19 @@ sources/1 = SubResource("TileSetAtlasSource_hmjf3")
 size = Vector2(58.1123, 52.3917)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cqlkv"]
-size = Vector2(59.8952, 64.0804)
+size = Vector2(59.8952, 68.5168)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pcfh1"]
+size = Vector2(595.75, 51)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ghemr"]
+size = Vector2(55, 278)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mxk7h"]
+size = Vector2(49, 161)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4s21m"]
+size = Vector2(20, 32)
 
 [node name="WorldGlassland" type="Node2D"]
 scale = Vector2(1.01934, 1)
@@ -2336,7 +2348,7 @@ layer_2/z_index = 1
 layer_2/tile_data = PackedInt32Array(393219, 1, 6, 131079, 1, 6, 655368, 1, 6, 65550, 1, 6, 196637, 1, 6, 720913, 1, 6, 786456, 1, 6, 327713, 1, 6, 196630, 1, 6, 458767, 1, 6, 131090, 1, 6, 458762, 1, 6, 524309, 1, 6, 393242, 1, 6, 720900, 524289, 6, 655388, 524289, 6, 65561, 524289, 6, 65540, 1245185, 10, 327687, 1376257, 6, 589827, 1376257, 6, 262157, 1376257, 6, 655372, 1376257, 6, 851982, 1376257, 6, 327698, 1376257, 6, 655380, 1376257, 6, 655375, 1376257, 6, 65564, 1376257, 6, 131104, 1376257, 6, 851996, 1376257, 6, 524318, 1376257, 6, 524321, 1376257, 6, 327709, 1376257, 6, 393239, 1376257, 6, 589829, 720897, 10, 393221, 720897, 10, 327681, 720897, 10, 262148, 720897, 10, 65547, 720897, 10, 327693, 720897, 10, 262171, 720897, 10, 262174, 720897, 10, 327710, 720897, 10, 720918, 720897, 10, 786441, 720897, 10, 262155, 720897, 10, 131092, 720897, 10, 720907, 262145, 6, 786433, 262145, 6, 196618, 1, 6, 262160, 1, 6, 917520, 1, 6, 917510, 1, 6, 917514, 1, 6, 851988, 1, 6, 524306, 1, 6, 851995, 1, 6, 31, 1, 6, 34, 1, 6, -65530, 1, 6, 10, 1, 6, 917534, 1, 6, 589855, 1, 6, 589848, 262145, 6, 458759, 262145, 6, 524289, 262145, 6, 524301, 262145, 6)
 
 [node name="player" parent="NavigationRegion2D/TileMap" instance=ExtResource("13_mdpms")]
-position = Vector2(16.692, 42.3917)
+position = Vector2(21.6014, 39.4341)
 
 [node name="slime" parent="NavigationRegion2D/TileMap" instance=ExtResource("15_cqlkv")]
 position = Vector2(323.04, 106.472)
@@ -2355,7 +2367,7 @@ idle_animation = "idle_slime"
 dead_animation = "dead_slime"
 
 [node name="slime3" parent="NavigationRegion2D/TileMap" instance=ExtResource("15_cqlkv")]
-position = Vector2(436.938, 225.76)
+position = Vector2(429.083, 227.732)
 enemy_name = "slime"
 speed = 60.0
 walk_animation = "walk_slime"
@@ -2380,19 +2392,15 @@ dead_animation = "dead_slime"
 
 [node name="Chest" parent="NavigationRegion2D/TileMap" instance=ExtResource("12_hmjf3")]
 position = Vector2(453.63, 171.538)
-scale = Vector2(1, 1)
 
 [node name="Chest2" parent="NavigationRegion2D/TileMap" instance=ExtResource("12_hmjf3")]
 position = Vector2(406.5, 27.6039)
-scale = Vector2(1, 1)
 
 [node name="Chest3" parent="NavigationRegion2D/TileMap" instance=ExtResource("12_hmjf3")]
 position = Vector2(70.6957, 187.312)
-scale = Vector2(1, 1)
 
 [node name="Chest4" parent="NavigationRegion2D/TileMap" instance=ExtResource("12_hmjf3")]
 position = Vector2(94.2609, 51.2644)
-scale = Vector2(1, 1)
 items = Array[ExtResource("16_pcfh1")]([ExtResource("17_ghemr")])
 
 [node name="UI_Layer" type="CanvasLayer" parent="NavigationRegion2D/TileMap"]
@@ -2414,11 +2422,8 @@ scale = Vector2(2.88507, 2.7264)
 
 [node name="GameInMenu" parent="NavigationRegion2D/TileMap/UI_Layer" instance=ExtResource("18_mdiqh")]
 
-[node name="FadeLayer" parent="NavigationRegion2D/TileMap/UI_Layer" instance=ExtResource("16_56ral")]
-
 [node name="to_world_home" type="Area2D" parent="NavigationRegion2D/TileMap"]
 position = Vector2(0.981884, -0.985853)
-scale = Vector2(1, 1)
 script = ExtResource("14_5h5lf")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NavigationRegion2D/TileMap/to_world_home"]
@@ -2430,9 +2435,44 @@ position = Vector2(582.257, 210.973)
 script = ExtResource("21_mdiqh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NavigationRegion2D/TileMap/to_world_dark"]
-position = Vector2(22.0923, -9.3656)
-scale = Vector2(1, 1)
+position = Vector2(20.6198, -10.1055)
 shape = SubResource("RectangleShape2D_cqlkv")
+
+[node name="walls" type="Node2D" parent="NavigationRegion2D"]
+
+[node name="top" type="StaticBody2D" parent="NavigationRegion2D/walls"]
+
+[node name="top" type="CollisionShape2D" parent="NavigationRegion2D/walls/top"]
+position = Vector2(296.27, -16)
+shape = SubResource("RectangleShape2D_pcfh1")
+
+[node name="bottom" type="StaticBody2D" parent="NavigationRegion2D/walls"]
+
+[node name="bottom" type="CollisionShape2D" parent="NavigationRegion2D/walls/bottom"]
+position = Vector2(289.403, 286)
+shape = SubResource("RectangleShape2D_pcfh1")
+
+[node name="left" type="StaticBody2D" parent="NavigationRegion2D/walls"]
+
+[node name="left" type="CollisionShape2D" parent="NavigationRegion2D/walls/left"]
+position = Vector2(-28.4498, 193)
+shape = SubResource("RectangleShape2D_ghemr")
+
+[node name="right" type="StaticBody2D" parent="NavigationRegion2D/walls"]
+position = Vector2(-1, 2)
+
+[node name="right" type="CollisionShape2D" parent="NavigationRegion2D/walls/right"]
+position = Vector2(589.616, 89)
+shape = SubResource("RectangleShape2D_mxk7h")
+
+[node name="other" type="StaticBody2D" parent="NavigationRegion2D/walls"]
+position = Vector2(649.44, 275)
+
+[node name="other" type="CollisionShape2D" parent="NavigationRegion2D/walls/other"]
+position = Vector2(-64.7478, -22)
+shape = SubResource("RectangleShape2D_4s21m")
+
+[node name="FadeLayer" parent="." instance=ExtResource("16_56ral")]
 
 [connection signal="body_entered" from="NavigationRegion2D/TileMap/to_world_home" to="NavigationRegion2D/TileMap/to_world_home" method="_on_body_entered"]
 [connection signal="body_entered" from="NavigationRegion2D/TileMap/to_world_dark" to="NavigationRegion2D/TileMap/to_world_dark" method="_on_body_entered"]

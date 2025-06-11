@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://xljtxxoxtdlv" path="res://art/privious/icon.svg" id="1_cpw6a"]
 [ext_resource type="Script" uid="uid://5w2jo1j25jv3" path="res://script/dialogue_control.gd" id="1_esu7l"]
-[ext_resource type="Resource" uid="uid://br50krtrunsws" path="res://Resource/dialogue_resource/dialogue_with_businesswomen.tres" id="2_2qw3d"]
+[ext_resource type="Resource" uid="uid://cyfpncrh76lam" path="res://Resource/dialogue_resource/girl.tres" id="2_2qw3d"]
 
 [node name="Dialogue" type="Control" node_paths=PackedStringArray("character_name_text", "text_box", "left_avatar", "right_avatar")]
 layout_mode = 3

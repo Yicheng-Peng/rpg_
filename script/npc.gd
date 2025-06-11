@@ -3,7 +3,7 @@ class_name NPCBase
 
 @export var npc_name: String = "Unnamed"
 @export var dialogue_resource: Dialogies
-@export var idle_animation_name: String = "idle"  # 动画名称（比如 "Warrior"、"businesswomen"）
+@export var idle_animation_name: String = "idle"
 
 signal dialogue_requested(dialogue: Dialogies)
 
@@ -24,4 +24,6 @@ func _ready():
 
 func _on_body_entered(body: Node):
 	if body.name == "player":
+		print(dialogue_resource)
 		emit_signal("dialogue_requested", dialogue_resource)
+"res://art/avator/you.png"

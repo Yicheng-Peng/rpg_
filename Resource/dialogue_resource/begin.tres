@@ -1,0 +1,90 @@
+[gd_resource type="Resource" script_class="Dialogies" load_steps=14 format=3 uid="uid://mehh0tjw2x0m"]
+
+[ext_resource type="Script" uid="uid://culsjjboak18s" path="res://script/dialogue.gd" id="1_5wlnc"]
+[ext_resource type="Script" uid="uid://dyj3xwog856ae" path="res://script/dialogues.gd" id="2_d5ybt"]
+[ext_resource type="Texture2D" uid="uid://dix3hyv353gy5" path="res://art/avator/npc.png" id="2_f67d5"]
+
+[sub_resource type="Resource" id="Resource_5wlnc"]
+script = ExtResource("1_5wlnc")
+name = ""
+content = "A long, long time ago...(Press 'c' to continue...)"
+avatar = ExtResource("2_f67d5")
+show_on_left = false
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_d5ybt"]
+script = ExtResource("1_5wlnc")
+name = ""
+content = "A fearsome Demon Lord laid waste to a peaceful village."
+avatar = ExtResource("2_f67d5")
+show_on_left = false
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_r8m3g"]
+script = ExtResource("1_5wlnc")
+name = ""
+content = "Just when all hope seemed lost, a brave hero rose from the chaos, defeated the Demon Lord, and brought peace back to the land."
+avatar = ExtResource("2_f67d5")
+show_on_left = false
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_ly8gl"]
+script = ExtResource("1_5wlnc")
+name = ""
+content = "But peace doesn’t last forever—does it ever? Rumor has it... the Demon Lord is waking up again."
+avatar = ExtResource("2_f67d5")
+show_on_left = false
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_tr7nj"]
+script = ExtResource("1_5wlnc")
+name = ""
+content = "And guess what? You are the chosen one! (Yes, you. Don't look behind you.)"
+avatar = ExtResource("2_f67d5")
+show_on_left = false
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_7ckp7"]
+script = ExtResource("1_5wlnc")
+name = ""
+content = "Your ultimate mission: track down the Demon Lord and beat the evil out of him."
+avatar = ExtResource("2_f67d5")
+show_on_left = false
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_ogn32"]
+script = ExtResource("1_5wlnc")
+name = ""
+content = "But hey, hold your sword—you're not strong enough. Yet."
+avatar = ExtResource("2_f67d5")
+show_on_left = false
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_5dk14"]
+script = ExtResource("1_5wlnc")
+name = ""
+content = "“How do I get stronger?” you ask. Great question!"
+avatar = ExtResource("2_f67d5")
+show_on_left = false
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_82nmi"]
+script = ExtResource("1_5wlnc")
+name = ""
+content = "Maybe… just maybe… the friendly-looking NPC standing right next to you knows something."
+avatar = ExtResource("2_f67d5")
+show_on_left = false
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_ji7ng"]
+script = ExtResource("1_5wlnc")
+name = ""
+content = "Go talk to him. Or don’t. I’m just the narrator. 😏"
+avatar = ExtResource("2_f67d5")
+show_on_left = false
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[resource]
+script = ExtResource("2_d5ybt")
+dialogues = Array[ExtResource("1_5wlnc")]([SubResource("Resource_5wlnc"), SubResource("Resource_d5ybt"), SubResource("Resource_r8m3g"), SubResource("Resource_ly8gl"), SubResource("Resource_tr7nj"), SubResource("Resource_7ckp7"), SubResource("Resource_ogn32"), SubResource("Resource_5dk14"), SubResource("Resource_82nmi"), SubResource("Resource_ji7ng")])
+metadata/_custom_type_script = "uid://dyj3xwog856ae"

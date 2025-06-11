@@ -1,0 +1,105 @@
+[gd_resource type="Resource" script_class="Dialogies" load_steps=16 format=3 uid="uid://cyfpncrh76lam"]
+
+[ext_resource type="Script" uid="uid://culsjjboak18s" path="res://script/dialogue.gd" id="1_k7iqv"]
+[ext_resource type="Texture2D" uid="uid://diet3gjyy782s" path="res://art/avator/girl.png" id="2_34fv6"]
+[ext_resource type="Texture2D" uid="uid://iatf5jjernvc" path="res://art/avator/you.png" id="3_2ye54"]
+[ext_resource type="Script" uid="uid://dyj3xwog856ae" path="res://script/dialogues.gd" id="3_5danx"]
+
+[sub_resource type="Resource" id="Resource_uewwl"]
+script = ExtResource("1_k7iqv")
+name = "Mary"
+content = "You’re here.
+I was expecting you."
+avatar = ExtResource("2_34fv6")
+show_on_left = false
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_n5d3u"]
+script = ExtResource("1_k7iqv")
+name = "Mary"
+content = "There are things you must know before your journey begins."
+avatar = ExtResource("2_34fv6")
+show_on_left = false
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_8hg21"]
+script = ExtResource("1_k7iqv")
+name = "Mary"
+content = "At the start of each level, you’ll meet one of my fairy friends.
+They’ll help guide you and point out hidden treasure chests."
+avatar = ExtResource("2_34fv6")
+show_on_left = false
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_18jrb"]
+script = ExtResource("1_k7iqv")
+name = "Mary"
+content = " Those chests are crucial if you hope to defeat the Demon Lord.
+They hold items that can change the outcome of your battles."
+avatar = ExtResource("2_34fv6")
+show_on_left = false
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_2ye54"]
+script = ExtResource("1_k7iqv")
+name = "you"
+content = "Noted. Open chests, save the world. Easy enough."
+avatar = ExtResource("3_2ye54")
+show_on_left = true
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_m0m3w"]
+script = ExtResource("1_k7iqv")
+name = "Mary"
+content = "But don’t just charge ahead blindly.
+A reckless brute may punch hard—but he rarely wins the war."
+avatar = ExtResource("2_34fv6")
+show_on_left = false
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_0batr"]
+script = ExtResource("1_k7iqv")
+name = "Mary"
+content = "Most importantly… listen to every word the fairies say.
+Their clues hold the keys to victory. Miss one, and you might miss your chance."
+avatar = ExtResource("2_34fv6")
+show_on_left = false
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_sswgk"]
+script = ExtResource("1_k7iqv")
+name = "you"
+content = "Got it. No skipping dialogue. Even if they talk a lot."
+avatar = ExtResource("3_2ye54")
+show_on_left = true
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_bsdqx"]
+script = ExtResource("1_k7iqv")
+name = "Mary"
+content = "Good. Then you’re ready.
+Your fate—and the fate of this world—may depend on it."
+avatar = ExtResource("2_34fv6")
+show_on_left = false
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_qhpq3"]
+script = ExtResource("1_k7iqv")
+name = "you"
+content = "No pressure, huh?"
+avatar = ExtResource("3_2ye54")
+show_on_left = true
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_ecakk"]
+script = ExtResource("1_k7iqv")
+name = "Mary"
+content = "Also, there is a box left for you. You can see it when crossing the bridge."
+avatar = ExtResource("2_34fv6")
+show_on_left = false
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[resource]
+script = ExtResource("3_5danx")
+dialogues = Array[ExtResource("1_k7iqv")]([SubResource("Resource_uewwl"), SubResource("Resource_n5d3u"), SubResource("Resource_8hg21"), SubResource("Resource_18jrb"), SubResource("Resource_2ye54"), SubResource("Resource_m0m3w"), SubResource("Resource_0batr"), SubResource("Resource_sswgk"), SubResource("Resource_bsdqx"), SubResource("Resource_qhpq3"), SubResource("Resource_ecakk")])
+metadata/_custom_type_script = "uid://dyj3xwog856ae"

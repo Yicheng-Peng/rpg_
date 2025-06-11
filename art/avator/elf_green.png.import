@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c3n13dc5ki7tl"
-path="res://.godot/imported/像素小人 (41).png-69307bd4f6c4bd3979f21940a717cc23.ctex"
+uid="uid://dhtsluaqt00pb"
+path="res://.godot/imported/elf_green.png-2248c8fcc4a638bc37304bfd54cd50dc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/人物/像素小人 (41).png"
-dest_files=["res://.godot/imported/像素小人 (41).png-69307bd4f6c4bd3979f21940a717cc23.ctex"]
+source_file="res://art/avator/elf_green.png"
+dest_files=["res://.godot/imported/elf_green.png-2248c8fcc4a638bc37304bfd54cd50dc.ctex"]
 
 [params]
 
