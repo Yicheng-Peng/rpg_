@@ -2279,10 +2279,8 @@ position = Vector2(-671.44, -34)
 shape = SubResource("RectangleShape2D_y120w")
 
 [node name="FadeLayer" parent="." instance=ExtResource("6_eiop6")]
-visible = false
 
 [node name="UI_Layer" type="CanvasLayer" parent="."]
-visible = false
 
 [node name="Dialogue" parent="UI_Layer" instance=ExtResource("9_a5w1r")]
 offset_left = -1.0

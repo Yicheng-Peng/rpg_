@@ -2789,14 +2789,15 @@ position = Vector2(547, 39)
 scale = Vector2(1.11207, 0.943041)
 
 [node name="Jack" parent="NavigationRegion2D/TileMap" instance=ExtResource("7_btx5k")]
-position = Vector2(500, 100)
+position = Vector2(499, 100)
+scale = Vector2(1.5, 1.5)
 npc_name = "Jack"
 dialogue_resource = ExtResource("9_vic3o")
 idle_animation_name = "bro"
 
 [node name="Mary" parent="NavigationRegion2D/TileMap" instance=ExtResource("7_btx5k")]
 position = Vector2(220, 50)
-scale = Vector2(1.01038, 1)
+scale = Vector2(1.212, 1.2)
 npc_name = "Jack"
 dialogue_resource = ExtResource("10_vic3o")
 idle_animation_name = "girl"

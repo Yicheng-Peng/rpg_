@@ -2412,7 +2412,6 @@ dialogue_resource = ExtResource("19_mxk7h")
 idle_animation_name = "elf_green"
 
 [node name="UI_Layer" type="CanvasLayer" parent="NavigationRegion2D/TileMap"]
-visible = false
 
 [node name="Dialogue" parent="NavigationRegion2D/TileMap/UI_Layer" instance=ExtResource("16_yxvax")]
 offset_left = -1.0
@@ -2482,7 +2481,6 @@ position = Vector2(-64.7478, -22)
 shape = SubResource("RectangleShape2D_4s21m")
 
 [node name="FadeLayer" parent="." instance=ExtResource("16_56ral")]
-visible = false
 
 [connection signal="body_entered" from="NavigationRegion2D/TileMap/to_world_home" to="NavigationRegion2D/TileMap/to_world_home" method="_on_body_entered"]
 [connection signal="body_entered" from="NavigationRegion2D/TileMap/to_world_dark" to="NavigationRegion2D/TileMap/to_world_dark" method="_on_body_entered"]
