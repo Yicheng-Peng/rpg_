@@ -1,0 +1,102 @@
+[gd_resource type="Resource" script_class="Dialogies" load_steps=15 format=3 uid="uid://cnck6yodhtmis"]
+
+[ext_resource type="Script" uid="uid://culsjjboak18s" path="res://script/dialogue/dialogue.gd" id="1_d188u"]
+[ext_resource type="Script" uid="uid://dyj3xwog856ae" path="res://script/dialogue/dialogues.gd" id="2_mmlci"]
+[ext_resource type="Texture2D" uid="uid://dhtsluaqt00pb" path="res://art/avator/elf_green.png" id="2_ss4m8"]
+[ext_resource type="Texture2D" uid="uid://iatf5jjernvc" path="res://art/avator/you.png" id="3_pgnbt"]
+
+[sub_resource type="Resource" id="Resource_d188u"]
+script = ExtResource("1_d188u")
+name = "Leafy"
+content = "Hello there! I'm Leafy!"
+avatar = ExtResource("2_ss4m8")
+show_on_left = false
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_mmlci"]
+script = ExtResource("1_d188u")
+name = "you"
+content = "Leafy? You can fly? Wait... are you the one Mary mentioned...?"
+avatar = ExtResource("3_pgnbt")
+show_on_left = true
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_ss4m8"]
+script = ExtResource("1_d188u")
+name = "Leafy"
+content = "That’s right! I'm a proud member of the Fairy Tribe!
+Why are you staring at me like that? Don’t tell me you think I'm adorable!"
+avatar = ExtResource("2_ss4m8")
+show_on_left = false
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_pgnbt"]
+script = ExtResource("1_d188u")
+name = "you"
+content = "Pfft... you’re so full of yourself."
+avatar = ExtResource("3_pgnbt")
+show_on_left = true
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_rkcb5"]
+script = ExtResource("1_d188u")
+name = "Leafy"
+content = "Hmph! A guy with no emotional intelligence like you is destined to be single forever.
+Anyway, let’s get down to business:"
+avatar = ExtResource("2_ss4m8")
+show_on_left = false
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_mhbqv"]
+script = ExtResource("1_d188u")
+name = "Leafy"
+content = "This forest is your first trial.
+Inside, you'll find treasure chests that can boost your abilities, so don’t just rush straight to the second stage!
+Without those upgrades, you’ll have a hard time defeating the Demon Lord!"
+avatar = ExtResource("2_ss4m8")
+show_on_left = false
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_h0lhr"]
+script = ExtResource("1_d188u")
+name = "Leafy"
+content = "—— And also!
+There are a bunch of little slimes wandering around.
+They’re not strong individually, but they come in numbers.
+Here, take this sword!
+Open your backpack and equip it —
+Otherwise, you might get overwhelmed by the slime horde!"
+avatar = ExtResource("2_ss4m8")
+show_on_left = false
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_l02ma"]
+script = ExtResource("1_d188u")
+name = "Leafy"
+content = "The slimes patrol the area, and once they spot you, they’ll rush at you!
+Be careful!"
+avatar = ExtResource("2_ss4m8")
+show_on_left = false
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_1ghjr"]
+script = ExtResource("1_d188u")
+name = "Leafy"
+content = "And finally, remember this:
+Hope hides within the color red."
+avatar = ExtResource("2_ss4m8")
+show_on_left = false
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_iwqkt"]
+script = ExtResource("1_d188u")
+name = "you"
+content = "...Ugh, I hate riddles."
+avatar = ExtResource("3_pgnbt")
+show_on_left = true
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[resource]
+script = ExtResource("2_mmlci")
+dialogues = Array[ExtResource("1_d188u")]([SubResource("Resource_d188u"), SubResource("Resource_mmlci"), SubResource("Resource_ss4m8"), SubResource("Resource_pgnbt"), SubResource("Resource_rkcb5"), SubResource("Resource_mhbqv"), SubResource("Resource_h0lhr"), SubResource("Resource_l02ma"), SubResource("Resource_1ghjr"), SubResource("Resource_iwqkt")])
+metadata/_custom_type_script = "uid://dyj3xwog856ae"

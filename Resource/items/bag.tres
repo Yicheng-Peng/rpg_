@@ -1,13 +1,9 @@
-[gd_resource type="Resource" script_class="Inventory" load_steps=6 format=3 uid="uid://bom2b21rtn7pc"]
+[gd_resource type="Resource" script_class="Inventory" load_steps=2 format=3 uid="uid://bom2b21rtn7pc"]
 
-[ext_resource type="Resource" uid="uid://dblsajp86mut" path="res://Resource/items/helmet/Golden_Holy_Helmet.tres" id="1_ed3er"]
-[ext_resource type="Script" uid="uid://dbeyaw2bs5836" path="res://script/Inventory.gd" id="2_eyrvd"]
-[ext_resource type="Resource" uid="uid://dhatpcwo25ulx" path="res://Resource/items/helmet/Knight's_Silver_Helmet.tres" id="2_gop02"]
-[ext_resource type="Resource" uid="uid://b4klm7dcoqf8h" path="res://Resource/items/weapon/Knight's Silver_Sword.tres" id="3_gop02"]
-[ext_resource type="Resource" uid="uid://c413d8unjx3ht" path="res://Resource/items/medicine/medecine.tres" id="4_bdfq2"]
+[ext_resource type="Script" uid="uid://dbeyaw2bs5836" path="res://script/bag/Inventory.gd" id="1_bu1n5"]
 
 [resource]
-script = ExtResource("2_eyrvd")
-items = Array[Resource]([null, ExtResource("1_ed3er"), ExtResource("2_gop02"), ExtResource("3_gop02"), ExtResource("4_bdfq2"), null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null])
+script = ExtResource("1_bu1n5")
+items = Array[Resource]([null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null])
 name = ""
 metadata/_custom_type_script = "uid://dbeyaw2bs5836"

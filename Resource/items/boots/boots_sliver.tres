@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://ccgf83hsyhfoh"]
+
+[ext_resource type="Script" uid="uid://b7ipbpex3e8sp" path="res://script/bag/item.gd" id="1_bwoh8"]
+[ext_resource type="Texture2D" uid="uid://d21kem4aa0gc3" path="res://art/items/boots_sliver.png" id="2_cmegq"]
+
+[resource]
+script = ExtResource("1_bwoh8")
+name = ""
+type = 3
+describe = ""
+texture = ExtResource("2_cmegq")
+attack = 0
+defense = 0
+health = 0
+speed = 20
+medecine_add_health = 0
+metadata/_custom_type_script = "uid://b7ipbpex3e8sp"

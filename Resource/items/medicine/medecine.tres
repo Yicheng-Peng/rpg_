@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://c413d8unjx3ht"]
 
-[ext_resource type="Script" uid="uid://b7ipbpex3e8sp" path="res://script/item.gd" id="1_p46ux"]
+[ext_resource type="Script" uid="uid://b7ipbpex3e8sp" path="res://script/bag/item.gd" id="1_p46ux"]
 [ext_resource type="Texture2D" uid="uid://bjictk6qulwj7" path="res://art/items/medecine.png" id="2_orofd"]
 
 [resource]

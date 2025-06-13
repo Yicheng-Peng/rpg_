@@ -1,0 +1,83 @@
+[gd_resource type="Resource" script_class="Dialogies" load_steps=14 format=3 uid="uid://diq2qjnh6dofq"]
+
+[ext_resource type="Script" uid="uid://culsjjboak18s" path="res://script/dialogue/dialogue.gd" id="1_q4sd4"]
+[ext_resource type="Texture2D" uid="uid://iatf5jjernvc" path="res://art/avator/you.png" id="2_6rhuo"]
+[ext_resource type="Script" uid="uid://dyj3xwog856ae" path="res://script/dialogue/dialogues.gd" id="2_p3k2w"]
+[ext_resource type="Texture2D" uid="uid://ddypbogb0ru21" path="res://art/avator/elf_purple.png" id="3_k48ft"]
+
+[sub_resource type="Resource" id="Resource_q4sd4"]
+script = ExtResource("1_q4sd4")
+name = "you"
+content = "Hi!!! Nice to meet you."
+avatar = ExtResource("2_6rhuo")
+show_on_left = true
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_p3k2w"]
+script = ExtResource("1_q4sd4")
+name = "Zira"
+content = "I’m Zira (cool and aloof)."
+avatar = ExtResource("3_k48ft")
+show_on_left = false
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_6rhuo"]
+script = ExtResource("1_q4sd4")
+name = "you"
+content = "The Fairy Tribe? What’s your relation to Leafy"
+avatar = ExtResource("2_6rhuo")
+show_on_left = true
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_k48ft"]
+script = ExtResource("1_q4sd4")
+name = "Zira"
+content = "Sisters..."
+avatar = ExtResource("3_k48ft")
+show_on_left = false
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_kdugd"]
+script = ExtResource("1_q4sd4")
+name = "you"
+content = "Doesn’t seem like it. You’re the cool and aloof sister, but your little sister is way more energetic than you..."
+avatar = ExtResource("2_6rhuo")
+show_on_left = true
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_u2bwj"]
+script = ExtResource("1_q4sd4")
+name = "Zira"
+content = "Oh. Well, let’s get serious then. The previous generation’s hero hid a treasure chest somewhere around here."
+avatar = ExtResource("3_k48ft")
+show_on_left = false
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_a0sbr"]
+script = ExtResource("1_q4sd4")
+name = "Zira"
+content = " Now, you need to avoid the monsters here — they’re way tougher than the slimes you fought before."
+avatar = ExtResource("3_k48ft")
+show_on_left = false
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_3aov3"]
+script = ExtResource("1_q4sd4")
+name = "Zira"
+content = "Once you find the treasure chest, go find the Dragon and defeat it. That’s it. Go ahead."
+avatar = ExtResource("3_k48ft")
+show_on_left = false
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[sub_resource type="Resource" id="Resource_ijr1h"]
+script = ExtResource("1_q4sd4")
+name = "you"
+content = "...So cold. I don’t know if you're cold or if the planner just didn’t bother putting in the effort."
+avatar = ExtResource("2_6rhuo")
+show_on_left = true
+metadata/_custom_type_script = "uid://culsjjboak18s"
+
+[resource]
+script = ExtResource("2_p3k2w")
+dialogues = Array[ExtResource("1_q4sd4")]([SubResource("Resource_q4sd4"), SubResource("Resource_p3k2w"), SubResource("Resource_6rhuo"), SubResource("Resource_k48ft"), SubResource("Resource_kdugd"), SubResource("Resource_u2bwj"), SubResource("Resource_a0sbr"), SubResource("Resource_3aov3"), SubResource("Resource_ijr1h")])
+metadata/_custom_type_script = "uid://dyj3xwog856ae"

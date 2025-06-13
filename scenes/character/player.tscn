@@ -1,7 +1,7 @@
 [gd_scene load_steps=93 format=3 uid="uid://y81o6k1fabte"]
 
 [ext_resource type="Texture2D" uid="uid://ccmk8d113ukoa" path="res://art/privious/player.png" id="1_3vyb7"]
-[ext_resource type="Script" uid="uid://cj606bldnvivo" path="res://script/player.gd" id="1_g2els"]
+[ext_resource type="Script" uid="uid://cj606bldnvivo" path="res://script/character/player.gd" id="1_g2els"]
 [ext_resource type="Texture2D" uid="uid://ber4jxhe4r77m" path="res://art/people/attack/FR_Adventurer_Slash_000.png" id="2_y4r1p"]
 [ext_resource type="Texture2D" uid="uid://ddfr55sg32aol" path="res://art/people/attack/FR_Adventurer_Slash_001.png" id="3_d2wvv"]
 [ext_resource type="Texture2D" uid="uid://dsykmqnfpjkbx" path="res://art/people/attack/FR_Adventurer_Slash_002.png" id="4_3v2ag"]
@@ -359,7 +359,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("19_u2ulf")
 }],
-"loop": true,
+"loop": false,
 "name": &"die",
 "speed": 5.0
 }, {
@@ -591,7 +591,7 @@ position = Vector2(1, -14)
 scale = Vector2(0.03, 0.03)
 sprite_frames = SubResource("SpriteFrames_smehm")
 animation = &"attack_new"
-frame_progress = 0.429226
+frame_progress = 0.394706
 speed_scale = 2.0
 offset = Vector2(0, -15)
 

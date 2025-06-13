@@ -1,8 +1,8 @@
 [gd_scene load_steps=7 format=3 uid="uid://dfef4qa3elbd2"]
 
 [ext_resource type="PackedScene" uid="uid://b0nfxfecyjsia" path="res://scenes/bag/slot.tscn" id="1_m1213"]
-[ext_resource type="Script" uid="uid://dsbi1g2mqnvty" path="res://script/bag_system.gd" id="1_t53ex"]
-[ext_resource type="Script" uid="uid://dvfb3wtp8u5ew" path="res://script/0.gd" id="2_a4y5i"]
+[ext_resource type="Script" uid="uid://dsbi1g2mqnvty" path="res://script/bag/bag_system.gd" id="1_t53ex"]
+[ext_resource type="Script" uid="uid://dvfb3wtp8u5ew" path="res://script/bag/0.gd" id="2_a4y5i"]
 [ext_resource type="Texture2D" uid="uid://dtx8h08uohgw5" path="res://art/people/people.png" id="5_fvhhs"]
 
 [sub_resource type="SystemFont" id="SystemFont_m1213"]

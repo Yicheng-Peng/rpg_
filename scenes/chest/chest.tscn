@@ -1,9 +1,9 @@
 [gd_scene load_steps=11 format=3 uid="uid://btpdda2yig53e"]
 
-[ext_resource type="Script" uid="uid://biqcht42knrsq" path="res://script/chest.gd" id="1_3se45"]
+[ext_resource type="Script" uid="uid://biqcht42knrsq" path="res://script/chest/chest.gd" id="1_3se45"]
 [ext_resource type="Texture2D" uid="uid://dhy0gq183x8s5" path="res://art/items/chest2.png" id="2_uih34"]
-[ext_resource type="Script" uid="uid://b7ipbpex3e8sp" path="res://script/item.gd" id="2_vdnua"]
-[ext_resource type="Resource" uid="uid://b4klm7dcoqf8h" path="res://Resource/items/weapon/Knight's Silver_Sword.tres" id="3_8qlbc"]
+[ext_resource type="Script" uid="uid://b7ipbpex3e8sp" path="res://script/bag/item.gd" id="2_vdnua"]
+[ext_resource type="Resource" uid="uid://b4klm7dcoqf8h" path="res://Resource/items/weapon/sword_sliver.tres" id="3_8qlbc"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8qlbc"]
 atlas = ExtResource("2_uih34")

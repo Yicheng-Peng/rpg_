@@ -1,6 +1,6 @@
 [gd_scene load_steps=34 format=3 uid="uid://c30bfpqejoxcm"]
 
-[ext_resource type="Script" uid="uid://nvpgte6rhiao" path="res://script/npc.gd" id="1_p5ooc"]
+[ext_resource type="Script" uid="uid://nvpgte6rhiao" path="res://script/character/npc.gd" id="1_p5ooc"]
 [ext_resource type="Texture2D" uid="uid://ccmk8d113ukoa" path="res://art/privious/player.png" id="2_caa8t"]
 [ext_resource type="Texture2D" uid="uid://dsyedg4i2xsex" path="res://art/people/npc/dancers.png" id="3_7q751"]
 [ext_resource type="Texture2D" uid="uid://7w1u5nh5cv48" path="res://art/people/npc/pixel_character_pale_green.png" id="3_dvxt8"]

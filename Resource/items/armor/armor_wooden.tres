@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://buoghrt10c0dw"]
+
+[ext_resource type="Script" uid="uid://b7ipbpex3e8sp" path="res://script/bag/item.gd" id="1_oohjb"]
+[ext_resource type="Texture2D" uid="uid://c72iacm2exw42" path="res://art/items/armor_wooden.png" id="2_vvto8"]
+
+[resource]
+script = ExtResource("1_oohjb")
+name = ""
+type = 2
+describe = ""
+texture = ExtResource("2_vvto8")
+attack = 0
+defense = 0
+health = 20
+speed = 0
+medecine_add_health = 0
+metadata/_custom_type_script = "uid://b7ipbpex3e8sp"
