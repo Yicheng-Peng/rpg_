@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://b4klm7dcoqf8h"]
+
+[ext_resource type="Script" uid="uid://b7ipbpex3e8sp" path="res://script/bag/item.gd" id="1_g551e"]
+[ext_resource type="Texture2D" uid="uid://c1lvjonwtgefu" path="res://art/items/Silver_Sword.png" id="2_7kdbk"]
+
+[resource]
+script = ExtResource("1_g551e")
+name = "Knight's Silver_Sword"
+type = 0
+describe = "2222"
+texture = ExtResource("2_7kdbk")
+attack = 25
+defense = 0
+health = 0
+speed = 0
+medecine_add_health = 0
+metadata/_custom_type_script = "uid://b7ipbpex3e8sp"

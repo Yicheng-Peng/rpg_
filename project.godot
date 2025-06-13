@@ -17,12 +17,13 @@ config/icon="res://art/privious/icon.svg"
 
 [autoload]
 
-global="*res://script/global.gd"
+global="*res://script/world/global.gd"
 
 [display]
 
 window/size/viewport_width=1280
 window/size/viewport_height=680
+window/stretch/mode="viewport"
 
 [input]
 

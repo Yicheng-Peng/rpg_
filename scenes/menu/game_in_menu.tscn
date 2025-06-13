@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://kp2i1ffekjkn"]
 
-[ext_resource type="Script" uid="uid://dpf8gh28afwvl" path="res://script/game_in_menu.gd" id="1_w86f2"]
+[ext_resource type="Script" uid="uid://dpf8gh28afwvl" path="res://script/menu/game_in_menu.gd" id="1_w86f2"]
 
 [node name="GameInMenu" type="Control"]
 layout_mode = 3
@@ -57,6 +57,14 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 30
 text = "SAVE CURRENT GAME"
 
+[node name="Popup" type="Popup" parent="ColorRect/menu/save"]
+
+[node name="Label" type="Label" parent="ColorRect/menu/save/Popup"]
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+
 [node name="help" type="Button" parent="ColorRect/menu"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
@@ -94,7 +102,7 @@ theme_override_font_sizes/font_size = 30
 text = "W-move up      S-move down
 A-move left     D-move right
 B-open/close the bag system
-C-continue the dialogue
+C-start/continue the dialogue
 ESC-call the menu to save game
 /return to main menu"
 

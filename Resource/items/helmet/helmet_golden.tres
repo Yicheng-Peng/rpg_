@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://dblsajp86mut"]
+
+[ext_resource type="Script" uid="uid://b7ipbpex3e8sp" path="res://script/bag/item.gd" id="1_pli01"]
+[ext_resource type="Texture2D" uid="uid://dysx8j7ayxcii" path="res://art/items/golden_helmet.png" id="2_t5hb6"]
+
+[resource]
+script = ExtResource("1_pli01")
+name = "Golden_Holy_Helmet"
+type = 0
+describe = ""
+texture = ExtResource("2_t5hb6")
+attack = 0
+defense = 15
+health = 0
+speed = 0
+medecine_add_health = 0
+metadata/_custom_type_script = "uid://b7ipbpex3e8sp"

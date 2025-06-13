@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://b0nfxfecyjsia"]
 
-[ext_resource type="Script" uid="uid://4cv2jcw4jhyk" path="res://script/slot.gd" id="1_4v6ba"]
+[ext_resource type="Script" uid="uid://4cv2jcw4jhyk" path="res://script/bag/slot.gd" id="1_4v6ba"]
 
 [sub_resource type="SystemFont" id="SystemFont_jpyuo"]
 subpixel_positioning = 0

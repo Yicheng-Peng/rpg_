@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://dx1jhg7hihaob"]
+
+[ext_resource type="Script" uid="uid://b7ipbpex3e8sp" path="res://script/bag/item.gd" id="1_k8i4j"]
+[ext_resource type="Texture2D" uid="uid://b5hk55kwink7v" path="res://art/items/boots_legendary.png" id="2_nrtxl"]
+
+[resource]
+script = ExtResource("1_k8i4j")
+name = ""
+type = 3
+describe = ""
+texture = ExtResource("2_nrtxl")
+attack = 0
+defense = 0
+health = 0
+speed = 45
+medecine_add_health = 0
+metadata/_custom_type_script = "uid://b7ipbpex3e8sp"

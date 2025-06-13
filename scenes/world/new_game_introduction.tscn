@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bspponew187pe"]
 
-[ext_resource type="Script" uid="uid://dmjhqmfly3j8x" path="res://scenes/world/new_game_introduction.gd" id="1_jqml8"]
+[ext_resource type="Script" uid="uid://dmjhqmfly3j8x" path="res://script/world/new_game_introduction.gd" id="1_jqml8"]
 [ext_resource type="PackedScene" uid="uid://c1f6wukkfastg" path="res://scenes/dialogue/dialogue.tscn" id="2_f67eh"]
 [ext_resource type="Resource" uid="uid://mehh0tjw2x0m" path="res://Resource/dialogue_resource/begin.tres" id="3_0aa0c"]
 
