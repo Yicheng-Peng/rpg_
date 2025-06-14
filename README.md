@@ -57,3 +57,7 @@ License: Creative Commons CC0.
 
 IndigoFenix (2018) *NPC Dancers*. OpenGameArt.org. Available at: https://opengameart.org/content/npc-dancers
 (Accessed: 25 August 2018). Licensed under: CC0.
+
+The Japan Collection: Forest Graveyard
+By: [GuttyKreum](https://guttykreum.itch.io/forest-graveyard-game-assets)  
+License: Please refer to the original page for license terms.  
